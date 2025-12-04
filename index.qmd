@@ -1,0 +1,138 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.hero-section}
+# Nkem Okweye
+
+### Data Analyst | Data Scientist | Business Technology Professional
+
+Welcome to my portfolio. I'm a data professional passionate about transforming complex data into actionable insights and building innovative solutions that drive business value.
+
+[View Projects](#projects){.btn .btn-primary} [Resume](resume.qmd){.btn .btn-outline}
+:::
+
+::: {.section}
+## About Me
+
+::: {.about-container}
+::: {.about-image}
+![](Profile pic.jpg){.profile-pic}
+:::
+
+::: {.about-text}
+I'm currently pursuing a Master of Science in Data Science and Analytics at Georgetown University, building on my Honours Bachelor of Commerce in Business Technology Management from the University of Ottawa.
+
+With professional experience as a Data Analyst at the Department of National Defence and as a Student Analyst at Global Affairs Canada, I've developed expertise in building scalable data solutions, automating reporting workflows, and translating complex business requirements into intuitive data products.
+
+I specialize in leveraging modern data tools and technologies to solve real-world problems, from designing Power BI dashboards that reduce reporting time by 40% to building automated workflows that cut manual work by 80%.
+:::
+:::
+:::
+
+::: {.section #projects}
+## Featured Projects
+
+::: {.project-grid}
+::: {.project-card}
+![](menendez_brothers_cover.png){.project-image}
+
+### The Menendez Brothers: From Courtrooms to Comments Sections
+**Georgetown University - DSAN 5000** | *Upcoming Project*
+
+A data science exploration tracing how public discourse around the Menendez brothers transformed across 35 years—from their 1989 crime through their sensationalized trials to the Netflix era. This project analyzes media narratives across multiple platforms, revealing fundamental shifts in how American society understands family violence, male victimization, and criminal justice reform.
+
+**Technologies:** Python, NLP, Text Analysis, Data Visualization, Social Media Analytics
+
+*Project link coming soon*
+:::
+
+::: {.project-card}
+![](airplane_photo.jpg){.project-image}
+
+### A Deep Dive into U.S. Airline Performance
+**Georgetown University**
+
+An immersive exploration of aviation data, uncovering hidden patterns in flight operations, delays, and travel trends through statistical modeling and interactive visualizations. This project transforms thousands of flight records into actionable insights about air travel dynamics.
+
+**Technologies:** SQL, MySQLWorkbench, R, Quarto, GitHub, AWS
+
+[View Project →](https://no252-gu.github.io/DSAN_6300_MINI_PROJECT/)
+:::
+
+::: {.project-card}
+### Request Automation Portal
+**Department of National Defence**
+
+Designed an automated Azure DevOps workflow integrated with Microsoft Forms and Teams to track 100+ monthly requests, reducing manual entry by 80% and task delays by 50%.
+
+**Technologies:** Azure DevOps, Microsoft Forms, Power Automate, Teams
+:::
+
+::: {.project-card}
+### Data Mining Project
+**University of Ottawa**
+
+Identified key customer sentiment clusters from 5,456 Google reviews using K-Means analysis to uncover travel preference insights and inform content personalization strategies.
+
+**Technologies:** Python, K-Means, Clustering, NLP
+:::
+
+::: {.project-card}
+### Movie Review Application (Binge)
+**University of Ottawa**
+
+Built a responsive SQL-backed movie review application for 20,000+ records using HTML, CSS, and PHP, optimizing queries and user experience to improve feature response by 30%.
+
+**Technologies:** SQL, HTML, CSS, PHP
+
+[View Project →](https://nko123.github.io/index.html)
+:::
+
+::: {.project-card}
+### Interactive Dog Adoption Application
+**University of Ottawa**
+
+Built a Jupyter Notebook-based Python application for dog adoption and service options with authentication and search features using core Python concepts.
+
+**Technologies:** Python, Jupyter, Data Structures
+
+[View Project →](dog_adoption.qmd)
+:::
+:::
+:::
+
+::: {.section}
+## Skills Snapshot
+
+::: {.skills-grid}
+::: {.skill-category}
+**Programming & Tools**
+
+Python, R, SQL, JavaScript, HTML/CSS, Git, AWS, Azure DevOps
+:::
+
+::: {.skill-category}
+**Analytics & Data Science**
+
+ETL, Statistical Analysis, Machine Learning, NLP, Data Visualization, A/B Testing
+:::
+
+::: {.skill-category}
+**Business Intelligence**
+
+Power BI, Power Apps, Power Automate, Excel, SAP, Dataflow Gen2
+:::
+:::
+
+[View Full Skills →](skills.qmd){.btn .btn-secondary}
+:::
+
+::: {.section}
+## Let's Connect
+
+I'm always interested in discussing data science, analytics, and technology. Feel free to reach out!
+
+[View Full Resume →](resume.qmd){.btn .btn-primary}
+:::

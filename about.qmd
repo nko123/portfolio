@@ -1,0 +1,61 @@
+---
+title: "About Me"
+---
+
+::: {.about-header}
+![](Profile pic.jpg){.profile-pic-large}
+:::
+
+## Background
+
+I'm a data professional with a passion for transforming complex data into actionable insights that drive business value. Currently pursuing my Master of Science in Data Science and Analytics at Georgetown University, I bring a unique blend of technical expertise and business acumen developed through my Honours Bachelor of Commerce in Business Technology Management from the University of Ottawa.
+
+## Professional Journey
+
+My career has been shaped by meaningful experiences in government analytics and data engineering:
+
+**At the Department of National Defence**, I worked as a Data Analyst where I:
+
+- Supported data-driven decision-making for 200+ users across the department
+- Reduced report generation time by 40% through automated Power BI dashboards
+- Achieved 95% positive feedback on delivered data products
+- Cut manual workflow processes by 25% through innovative Power Apps solutions
+
+**At Global Affairs Canada**, as a Student Analyst, I:
+
+- Contributed to international policy reporting and analytics
+- Conducted competitive analyses to support strategic initiatives
+- Collaborated with cross-functional teams to define meaningful metrics
+
+## What Drives Me
+
+I'm passionate about:
+
+- **Solving Real Problems:** Finding elegant technical solutions to complex business challenges
+- **Data Storytelling:** Translating complex analytics into clear, actionable insights
+- **Continuous Learning:** Staying current with emerging technologies and methodologies
+- **Collaboration:** Working with diverse teams to achieve shared goals
+
+## Technical Philosophy
+
+I believe in building scalable, maintainable solutions that prioritize user needs. Whether it's designing an intuitive dashboard, automating a repetitive workflow, or uncovering insights from data, I focus on creating value that lasts.
+
+## Education & Growth
+
+My academic journey spans business technology and data science:
+
+- **Current:** MS in Data Science & Analytics at Georgetown University (2025-2027)
+  - Focusing on advanced analytics, machine learning, and statistical methods
+
+- **Completed:** Honours BCom in Business Technology Management at University of Ottawa (2020-2025)
+  - Bridged business strategy and technical implementation
+
+## Beyond Work
+
+When I'm not analyzing data or building applications, I enjoy exploring new technologies, contributing to open-source projects, and staying active in the data science community.
+
+## Let's Connect
+
+I'm always interested in discussing data science, analytics, technology, and opportunities to collaborate on meaningful projects.
+
+[View My Projects →](projects.qmd){.btn .btn-primary} [See My Skills →](skills.qmd){.btn .btn-secondary}

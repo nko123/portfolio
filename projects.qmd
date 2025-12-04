@@ -1,0 +1,227 @@
+---
+title: "Projects"
+---
+
+## Professional Projects
+
+::: {.project-detail}
+### Request Automation Portal
+**Department of National Defence**
+
+#### Overview
+Designed and implemented an automated workflow system to streamline request tracking and management across the department.
+
+#### Key Achievements
+
+- Automated tracking of 100+ monthly requests
+- Reduced manual data entry by 80%
+- Decreased task delays by 50%
+- Improved visibility and accountability across teams
+
+#### Technologies Used
+
+- Azure DevOps
+- Microsoft Forms
+- Microsoft Teams
+- Power Automate
+
+#### Impact
+The portal significantly improved operational efficiency by eliminating manual tracking processes and providing real-time visibility into request status, enabling better resource allocation and faster response times.
+:::
+
+## Academic & Personal Projects
+
+::: {.project-detail}
+![](menendez_brothers_cover.png){.project-detail-image}
+
+### The Menendez Brothers: From Courtrooms to Comments Sections
+**Georgetown University - DSAN 5000**
+
+#### Project Subtitle
+The Transformation of Menendez Media Narratives
+
+#### Overview
+On August 20, 1989, Lyle and Erik Menendez shot and killed their parents in their Beverly Hills mansion. What followed was one of the most sensationalized criminal trials in American history. But the story didn't end with their 1996 conviction—it evolved dramatically over 35 years, from tabloid sensation to Netflix phenomenon, from "cold-blooded killers" to potential victims of abuse deserving of freedom.
+
+This data science project traces how public discourse around the Menendez brothers transformed across three decades and multiple media platforms, revealing fundamental shifts in how American society understands family violence, male victimization, and criminal justice.
+
+#### Key Features
+
+- Analysis of media narratives spanning 35 years (1989-2024)
+- Multi-platform discourse analysis: traditional media, social media, and streaming content
+- Natural language processing of public sentiment and narrative framing
+- Visualization of evolving public perception over time
+- Examination of societal shifts in understanding trauma and justice
+
+#### Technologies Used
+
+- Python
+- Natural Language Processing (NLP)
+- Text Analysis & Sentiment Analysis
+- Data Visualization
+- Social Media Analytics
+
+#### Research Questions
+
+- How has media framing of the Menendez case evolved from 1989 to 2024?
+- What role did Netflix and social media play in reshaping public perception?
+- How do contemporary discussions reflect changing attitudes toward male victimization and family violence?
+
+*Project link coming soon*
+:::
+
+::: {.project-detail}
+![](airplane_photo.jpg){.project-detail-image}
+
+### A Deep Dive into U.S. Airline Performance
+**Georgetown University**
+
+#### Overview
+An immersive exploration of aviation data, uncovering hidden patterns in flight operations, delays, and travel trends through statistical modeling and interactive visualizations. This project transforms thousands of flight records into actionable insights about air travel dynamics.
+
+#### Key Features
+
+- Comprehensive analysis of U.S. airline performance metrics
+- Interactive visualizations revealing flight delay patterns
+- Statistical modeling of travel trends and operational dynamics
+- Data-driven insights into aviation industry performance
+
+#### Technologies Used
+
+- SQL
+- MySQLWorkbench
+- R
+- Quarto
+- GitHub
+- AWS
+
+#### Skills Demonstrated
+
+- Advanced data preprocessing and cleaning
+- Statistical modeling and hypothesis testing
+- Interactive data visualization
+- Insight communication through visual storytelling
+
+[View Project →](https://no252-gu.github.io/DSAN_6300_MINI_PROJECT/)
+:::
+
+::: {.project-detail}
+### Movie Review Web Application (Binge)
+**University of Ottawa - ADM 4379**
+
+#### Overview
+A full-stack web application for browsing and reviewing movies, designed to handle a large database of movie records with optimized performance.
+
+#### Key Features
+
+- Responsive user interface for seamless browsing
+- SQL database managing 20,000+ movie records
+- User authentication and review submission
+- Optimized query performance
+
+#### Technologies Used
+
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Database:** SQL
+
+#### Key Achievements
+
+- Improved feature response time by 30% through query optimization
+- Implemented responsive design for mobile and desktop
+- Created intuitive user experience for movie discovery
+
+[View Live Project →](https://nko123.github.io/index.html)
+:::
+
+::: {.project-detail}
+### Data Mining Project: Customer Sentiment Analysis
+**University of Ottawa - ADM 3308**
+
+#### Overview
+Analyzed customer reviews to identify sentiment patterns and travel preferences using unsupervised learning techniques.
+
+#### Dataset
+
+- 5,456 Google reviews
+- Travel and hospitality domain
+- Multi-dimensional customer feedback
+
+#### Methodology
+
+- Applied K-Means clustering algorithm
+- Identified distinct customer sentiment clusters
+- Analyzed cluster characteristics and patterns
+- Extracted actionable insights for content personalization
+
+#### Key Findings
+
+- Discovered distinct customer preference segments
+- Identified key factors influencing customer satisfaction
+- Provided data-driven recommendations for content strategy
+
+#### Technologies Used
+
+- Python
+- K-Means Clustering
+- Natural Language Processing (NLP)
+- Data Visualization
+
+#### Impact
+The analysis provided valuable insights into customer preferences, enabling data-driven content personalization strategies and improved targeting of travel services.
+:::
+
+::: {.project-detail}
+### Interactive Dog Adoption Application
+**University of Ottawa - ADM 4311**
+
+#### Overview
+A Python-based interactive application built in Jupyter Notebook to facilitate dog adoption and service selection.
+
+#### Key Features
+
+- Interactive notebook-based user interface
+- Search and filtering functionality
+- Authentication system
+- Service options selection
+
+#### Technical Implementation
+
+- Applied core Python concepts: loops, functions, conditionals
+- Implemented data structures for efficient data management
+- Built authentication using dictionary-based text mapping
+- Created search algorithms for dog matching
+
+#### Technologies Used
+
+- Python
+- Jupyter Notebook
+- Data Structures (dictionaries, lists)
+
+#### Learning Outcomes
+This project reinforced fundamental programming concepts and demonstrated the ability to create user-friendly interactive applications using Python.
+
+[View Project Details & Code →](dog_adoption.qmd)
+:::
+
+## Project Categories
+
+::: {.category-overview}
+**Professional Work**
+
+Enterprise-level automation and data analytics solutions deployed in government settings, focusing on operational efficiency and stakeholder value.
+
+**Web Development**
+
+Full-stack applications combining frontend design, backend logic, and database management to create functional, user-friendly experiences.
+
+**Data Science & Analytics**
+
+Machine learning, statistical analysis, and data mining projects demonstrating analytical thinking and technical expertise.
+
+**Python Applications**
+
+Interactive applications showcasing programming fundamentals and problem-solving capabilities.
+:::
+
+[← Back to Home](index.qmd){.btn .btn-secondary} [View Skills →](skills.qmd){.btn .btn-primary}

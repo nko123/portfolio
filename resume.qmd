@@ -1,0 +1,149 @@
+a---
+title: "Resume"
+---
+
+## Contact Information
+
+**NKEMDIBE OKWEYE**
+
+nkemokweye@gmail.com | (343) 777-1320 | [LinkedIn](#) | [GitHub](#)
+
+## Education
+
+::: {.resume-item}
+### Master of Science in Data Science and Analytics
+**Georgetown University** | Washington, DC | 2025 – 2027
+
+**Relevant Coursework:** Machine Learning, Statistical Methods, A/B Testing & Experimental Design, Probability & Statistics, Advanced Data Visualization, Database Systems, Python Programming
+:::
+
+::: {.resume-item}
+### Honours Bachelor of Commerce (Business Technology Management)
+**University of Ottawa** | Ottawa, Ontario | 2020 – 2025
+:::
+
+## Skills
+
+**Programming & Data Analysis**
+
+Python (Pandas, NumPy, Scikit-learn, PyTorch, NLTK, Matplotlib, Seaborn), SQL, R (tidyverse, ggplot2)
+
+**Machine Learning**
+
+Supervised Learning (Regression, Classification, Logistic Regression, Naive Bayes, KNN), Unsupervised Learning (K-Means, DBSCAN, PCA, t-SNE), Model Evaluation (ROC/AUC, Confusion Matrix, Feature Selection), NLP (Sentiment Analysis, TF-IDF, Topic Modeling)
+
+**Experimentation & Statistics**
+
+A/B Testing, Experimental Design, Statistical Analysis, Bayesian Inference, Hypothesis Testing, Dimensionality Reduction
+
+**Data Engineering & Tools**
+
+ETL Pipelines, Large-Scale Data Processing, APIs, Git/GitHub, Jupyter Notebooks, AWS, Power BI, Excel, Data Structures & Algorithms
+
+## Professional Experience
+
+::: {.resume-item}
+### Data Analyst
+**Department of National Defence** | Ottawa, Ontario | September 2023 – August 2024
+
+- Collaborated with data engineers and product stakeholders to optimize enterprise datasets for accuracy and scalability, supporting product decisions and departmental reporting for 200+ users
+- Designed and automated Power BI dashboards integrating data from SAP, Excel, Lakehouse, and SharePoint—reducing report generation time by 40% and improving stakeholder decision-making
+- Used SQL in Microsoft Fabric to extract, transform, and load data across Lakehouse environments for real-time reporting
+- Partnered with internal clients to identify reporting pain points and translate user needs into intuitive data products, achieving 95% positive feedback on delivered prototypes
+- Built low-code Power Apps solutions to streamline intake and tracking processes, cutting manual work by 25% and improving workflow visibility
+:::
+
+::: {.resume-item}
+### Student Analyst
+**Global Affairs Canada** | Ottawa, Ontario | May 2023 – August 2023
+
+- Supported internal performance reporting and outreach analytics for international initiatives, validating 3 key policy indicators for management reporting
+- Conducted competitive and policy gap analyses, aligning insights to organizational objectives and stakeholder needs
+- Collaborated cross-functionally with policy and technical teams to define metrics and translate qualitative data into actionable analytics
+:::
+
+## Projects
+
+::: {.resume-item}
+![](menendez_brothers_cover.png){.project-image}
+
+### Menendez Brothers Media Narrative Analysis
+**Georgetown University - DSAN 5000**
+
+- Engineered large-scale data pipeline processing 2,840+ documents from multiple APIs (Guardian API, YouTube Data API v3) and historical archives using robust ETL workflows
+- Developed and evaluated machine learning models (Multinomial Naive Bayes, Logistic Regression) achieving 96.8% test accuracy through hyperparameter tuning and feature selection
+- Designed experiments using unsupervised learning (K-Means, PCA, t-SNE) to reduce 2,000+ TF-IDF features into three interpretable narrative clusters
+- Applied statistical analysis and sentiment modeling to quantify temporal trends, identifying 0.4-point sentiment divergence between traditional journalism and social media
+- Presented findings through interactive visualizations including ROC curves, confusion matrices, and t-SNE embeddings
+:::
+
+::: {.resume-item}
+![](airplane_photo.jpg){.project-image}
+
+### U.S. Airline Performance Analysis
+**Georgetown University - DSAN 6300**
+
+- Designed and implemented dimensional data model (fact/dimension tables) for 600,000+ flight records from U.S. Department of Transportation, analyzing operational patterns across airlines and airports using PostgreSQL
+- Developed complex SQL queries to identify performance anomalies including maximum delays (2,620 minutes), cancellation patterns (14,488 flights), and busiest operational periods (106,575 daily flights)
+- Conducted statistical analysis and created data visualizations in R (tidyverse, ggplot2, kableExtra) to uncover temporal patterns in flight operations, revealing clear weekday/weekend patterns driven by business travel
+
+[View Project →](https://no252-gu.github.io/DSAN_6300_MINI_PROJECT/)
+:::
+
+::: {.resume-item}
+### Request Automation Portal
+**Department of National Defence**
+
+Designed an automated Azure DevOps workflow integrated with Microsoft Forms and Teams to track 100+ monthly requests; reduced manual entry by 80% and task delays by 50%.
+:::
+
+::: {.resume-item}
+### Movie Review Web Application (Binge)
+**University of Ottawa - ADM 4379**
+
+- Built responsive SQL-backed movie review application managing 20,000+ records with optimized database queries
+- Improved feature response time by 30% through query optimization and data structure improvements
+- Designed user-centric interface using HTML, CSS, and PHP to enhance user experience and engagement
+
+[View Project →](https://nko123.github.io/index.html)
+:::
+
+::: {.resume-item}
+### Interactive Dog Adoption Application
+**University of Ottawa - ADM 4311**
+
+- Built a Jupyter Notebook–based Python application for dog adoption and service options, executed through interactive notebook cells
+- Applied core Python concepts (loops, functions, conditionals, and data structures) to build search and selection features
+- Developed a simple authentication system using dictionary-based text mapping to validate usernames and passwords
+:::
+
+::: {.resume-item}
+### Data Mining Project
+**University of Ottawa - ADM 3308**
+
+Identified key customer sentiment clusters from 5,456 Google reviews using K-Means analysis to uncover travel preference insights and inform content personalization strategies.
+:::
+
+## Technical Skills
+
+**Programming & Development**
+
+Python (Pandas, NumPy, Scikit-learn, PyTorch, NLTK), R (tidyverse, ggplot), SQL, HTML, CSS, JavaScript, Git/GitHub, OOP
+
+**Cloud & Infrastructure**
+
+AWS, Azure DevOps, Microsoft Fabric, CLI
+
+**Business Intelligence & Automation**
+
+Power BI, Power Apps, Power Automate, Dataflow Gen2, Excel, SAP
+
+**Analytics & Data Science**
+
+ETL, Statistical Analysis, Data Mining, Data Engineering, Data Visualization, A/B Testing, Bayesian Inference, Supervised & Unsupervised Learning (regression, classification, t-SNE, PCA, DBSCAN, K-Means), Experimental Design, NLP, Big Data
+
+**Marketing & Digital**
+
+A/B Testing, Digital Marketing, Social Media Analytics, SEO/SEM, Web Design
+
+[← Back to Home](index.qmd){.btn .btn-secondary} [View Skills →](skills.qmd){.btn .btn-primary}

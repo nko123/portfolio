@@ -1,0 +1,200 @@
+---
+title: " "
+page-layout: full
+---
+
+::: {.skills-hero}
+# Skills & Expertise
+:::
+
+---
+
+## <i class="bi bi-code-slash"></i> Core Technical Skills
+
+::: {.skill-showcase-grid}
+::: {.skill-card}
+### <i class="bi bi-file-code-fill"></i> Python
+
+My go-to for data analysis, machine learning, and automation. From building NLP pipelines to clustering 5,000+ reviews, Python is my data science workhorse.
+
+**Key Libraries:** Pandas • NumPy • Scikit-learn • PyTorch • NLTK
+:::
+
+::: {.skill-card}
+### <i class="bi bi-bar-chart-line-fill"></i> R
+
+Statistical analysis and data visualization specialist. Used for advanced analytics and creating publication-ready visualizations.
+
+**Key Packages:** tidyverse • ggplot2 • statistical modeling
+:::
+
+::: {.skill-card}
+### <i class="bi bi-database-fill"></i> SQL
+
+Database design and query optimization for handling 20,000+ record datasets. Experience with MySQL and cloud-based data warehousing.
+
+**Applications:** Query optimization • Database design • ETL processes
+:::
+
+::: {.skill-card}
+### <i class="bi bi-code-square"></i> Web Development
+
+Full-stack capabilities for building responsive applications and data-driven web tools.
+
+**Technologies:** HTML • CSS • JavaScript • PHP • Git/GitHub
+:::
+:::
+
+---
+
+## <i class="bi bi-lightning-charge-fill"></i> Microsoft Power Platform
+
+
+::: {.skill-showcase-grid}
+::: {.skill-card}
+### <i class="bi bi-graph-up-arrow"></i> Power BI
+
+Designed dashboards that reduced reporting time by 40% and served 200+ users across departments.
+
+- Advanced DAX formulas
+- Data modeling & relationships
+- Interactive dashboard design
+- Performance optimization
+:::
+
+::: {.skill-card}
+### <i class="bi bi-arrow-repeat"></i> Power Automate
+
+Built automation workflows that cut manual work by 80% and integrated with Azure DevOps for seamless request tracking.
+
+- Workflow automation
+- Teams integration
+- Forms-to-database pipelines
+:::
+
+::: {.skill-card}
+### <i class="bi bi-phone"></i> Power Apps
+
+Low-code application development for rapid prototyping and business solutions.
+
+- Canvas apps
+- Model-driven apps
+- Custom connectors
+:::
+
+::: {.skill-card}
+### <i class="bi bi-hdd-network-fill"></i> Microsoft Fabric
+
+Working with Dataflow Gen2, Lakehouse architecture, and modern data engineering practices.
+
+- Dataflow Gen2
+- Lakehouse design
+- ETL pipelines
+:::
+:::
+
+---
+
+## <i class="bi bi-cloud"></i> Cloud & DevOps
+
+::: {.cloud-skills}
+::: {.cloud-card}
+**<i class="bi bi-cloud-upload"></i> AWS**
+
+Cloud infrastructure, deployment, and data storage solutions.
+:::
+
+::: {.cloud-card}
+**<i class="bi bi-microsoft"></i> Azure**
+
+Azure DevOps for project management and CI/CD workflows.
+:::
+
+::: {.cloud-card}
+**<i class="bi bi-git"></i> Version Control**
+
+Git/GitHub for collaborative development and code management.
+:::
+:::
+
+---
+
+## <i class="bi bi-graph-up"></i> Data Science & Machine Learning
+
+::: {.ds-categories}
+::: {.ds-category}
+### <i class="bi bi-gear"></i> Data Engineering
+- ETL pipeline design
+- Data warehousing
+- Database architecture
+- Data mining at scale
+:::
+
+::: {.ds-category}
+### <i class="bi bi-calculator"></i> Statistical Analysis
+- Bayesian inference
+- A/B testing & experimentation
+- Experimental design
+- Hypothesis testing
+:::
+
+::: {.ds-category}
+### <i class="bi bi-diagram-3"></i> Machine Learning
+**Supervised Learning**
+- Regression & classification
+- Model evaluation & tuning
+
+**Unsupervised Learning**
+- K-Means & DBSCAN clustering
+- PCA & t-SNE
+- Pattern discovery
+:::
+
+::: {.ds-category}
+### <i class="bi bi-stars"></i> Specialized Techniques
+- Natural Language Processing
+- Big data processing
+- Advanced data visualization
+- Social media analytics
+:::
+:::
+
+---
+
+## <i class="bi bi-people"></i> Soft Skills That Drive Impact
+
+::: {.soft-skills-grid}
+::: {.soft-skill-card}
+### <i class="bi bi-person-check"></i> Stakeholder Management
+
+Successfully collaborated with **200+ users** across departments, translating technical solutions into business value.
+:::
+
+::: {.soft-skill-card}
+### <i class="bi bi-lightbulb"></i> Problem Solving
+
+Identifying pain points and designing data-driven solutions—from automation portals to predictive models.
+:::
+
+::: {.soft-skill-card}
+### <i class="bi bi-chat-dots"></i> Communication
+
+Presenting complex technical concepts to non-technical audiences through clear visualizations and storytelling.
+:::
+
+::: {.soft-skill-card}
+### <i class="bi bi-diagram-3"></i> Cross-functional Collaboration
+
+Working seamlessly with data engineers, policy teams, and business stakeholders to deliver integrated solutions.
+:::
+:::
+
+---
+
+::: {.skills-footer}
+## Want to see these skills in action?
+
+[Explore My Projects](projects.qmd){.btn .btn-primary} [View Resume](resume.qmd){.btn .btn-secondary}
+:::
+
+[← Back to Home](index.qmd){.btn .btn-secondary}
