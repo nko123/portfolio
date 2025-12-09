@@ -1,4 +1,4 @@
-a---
+---
 title: "Resume"
 ---
 
@@ -6,7 +6,7 @@ title: "Resume"
 
 **NKEMDIBE OKWEYE**
 
-nkemokweye@gmail.com | (343) 777-1320 | [LinkedIn](#) | [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/nkemdibe-okweye-639059200/) | [GitHub](https://github.com/nko123)
 
 ## Education
 
