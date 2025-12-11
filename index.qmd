@@ -39,13 +39,13 @@ I specialize in leveraging modern data tools and technologies to solve real-worl
 ![](menendez_brothers_cover.png){.project-image}
 
 ### The Menendez Brothers: From Courtrooms to Comments Sections
-**Georgetown University - DSAN 5000** | *Upcoming Project*
+**Georgetown University**
 
 A data science exploration tracing how public discourse around the Menendez brothers transformed across 35 years—from their 1989 crime through their sensationalized trials to the Netflix era. This project analyzes media narratives across multiple platforms, revealing fundamental shifts in how American society understands family violence, male victimization, and criminal justice reform.
 
 **Technologies:** Python, NLP, Text Analysis, Data Visualization, Social Media Analytics
 
-*Project link coming soon*
+[View Project →](https://nkemokweye.georgetown.domains/fall-2025-project-no252-gu/)
 :::
 
 ::: {.project-card}
