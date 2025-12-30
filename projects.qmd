@@ -71,6 +71,79 @@ This data science project traces how public discourse around the Menendez brothe
 :::
 
 ::: {.project-detail}
+![](voterturnout_main.png){.project-detail-image}
+
+### Socioeconomic and Structural Determinants for Voter Turnout in the U.S. Elections
+**Georgetown University - DSAN 5100: Probabilistic Modeling and Statistical Computing**
+*December 2025*
+
+#### Project Subtitle
+A Comprehensive Statistical Analysis of Voting Behavior Across Four Decades
+
+#### Overview
+Voter turnout in the United States varies dramatically from state to state and election to election. This research project investigates whether socioeconomic pressures—unemployment, housing affordability, crime rates, and cost of living—have become stronger predictors of voter participation than civic obligation alone.
+
+Analyzing data from six strategically selected states (New York, California, Ohio, Michigan, Florida, and Utah) across 23 elections from 1980 to 2024, this study tests whether external conditions influence whether people vote or if turnout remains stable regardless of economic and social realities.
+
+#### Key Research Questions
+
+- Do macroeconomic conditions (unemployment, household income, housing prices) predict voter turnout?
+- Is there a significant relationship between violent crime rates and political participation?
+- Does a state's political affiliation (Red, Blue, or Swing) influence turnout patterns?
+- Can weather conditions on Election Day affect voter participation?
+- What unemployment trends can we forecast for the 2026 midterm elections?
+
+#### Methodology & Statistical Techniques
+
+- **One-Way ANOVA & Welch's ANOVA:** Compared mean voter turnout across categorical groupings of economic and crime factors
+- **Chi-Square Tests of Independence:** Examined associations between categorical variables and turnout classification
+- **Permutation Tests:** Assessed linear relationships between continuous variables without distributional assumptions
+- **Bootstrap Resampling:** Evaluated pre-post comparisons of turnout across historical crime periods
+- **Time Series Analysis (ARIMA):** Forecasted 2026 unemployment rates for Florida, California, and Michigan
+- **Post-Hoc Testing:** Bonferroni and Games-Howell procedures for pairwise comparisons
+
+#### Key Findings
+
+- **Partisan Affiliation Matters:** Swing states showed 5.47% higher turnout than Blue states in presidential elections (p = 0.0012)
+- **Housing Economics Influence Turnout:** States with high housing price indices had ~5% higher presidential turnout than low HPI states (p = 0.0007)
+- **Crime Impacts Presidential Elections:** Medium-crime elections saw 4.35 percentage points higher turnout than high-crime elections (p = 0.004)
+- **Weather Has No Effect:** Neither precipitation nor temperature showed statistically significant associations with turnout
+- **Economic Forecast:** All three analyzed states predict rising unemployment heading into 2026 midterms
+
+#### Data Sources
+
+- **Voter Turnout:** University of Florida Election Lab
+- **Economic Data:** Federal Reserve Economic Data (FRED) - unemployment rates, median household income, housing price index
+- **Crime Statistics:** FBI Crime Data Explorer - violent crime rates by state
+- **Weather Data:** NOAA API - Election Day conditions from capital city weather stations
+- **Population Data:** U.S. Census Bureau
+
+#### Technologies & Tools Used
+
+- R (Statistical Analysis & Modeling)
+- Python (Data Processing & Cleaning)
+- ARIMA Time Series Modeling
+- Statistical Testing Frameworks
+- Data Visualization (ggplot2, matplotlib)
+- Federal Reserve Economic Data (FRED) API
+- NOAA Weather API
+
+#### Impact & Implications
+
+This analysis demonstrates that voter participation is responsive to real-world conditions people experience, not just political factors. The findings suggest campaigns can strategically identify issues that resonate with voters by understanding the socioeconomic conditions that drive turnout. The work provides evidence-based insights for:
+
+- Political campaign strategy and messaging
+- Understanding voter mobilization dynamics
+- Predicting turnout based on economic indicators
+- Resource allocation in swing states with economic volatility
+
+#### Team Members
+Pavlos Baffes, Noelle Martell, Younghoon (Eric) Kim, Nkem Okweye, Nikhil Patla
+
+[View Full Project →](https://nko123.github.io/DSAN-5100-Final-Project/)
+:::
+
+::: {.project-detail}
 ![](airplane_photo.jpg){.project-detail-image}
 
 ### A Deep Dive into U.S. Airline Performance

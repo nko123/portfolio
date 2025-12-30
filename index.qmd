@@ -36,6 +36,19 @@ I specialize in leveraging modern data tools and technologies to solve real-worl
 
 ::: {.project-grid}
 ::: {.project-card}
+![](voterturnout_main.png){.project-image}
+
+### Socioeconomic and Structural Determinants for Voter Turnout
+**Georgetown University - DSAN 5100**
+
+A comprehensive statistical analysis investigating whether socioeconomic pressures—unemployment, housing affordability, crime rates, and cost of living—predict voter participation more than civic duty. Analyzing 23 elections (1980-2024) across six states using advanced statistical methods including ANOVA, time series forecasting, and bootstrap resampling to uncover what really drives Americans to vote.
+
+**Technologies:** R, Python, Quarto
+
+[View Project →](https://nko123.github.io/DSAN-5100-Final-Project/)
+:::
+
+::: {.project-card}
 ![](menendez_brothers_cover.png){.project-image}
 
 ### The Menendez Brothers: From Courtrooms to Comments Sections
@@ -76,7 +89,7 @@ Designed an automated Azure DevOps workflow integrated with Microsoft Forms and 
 
 Identified key customer sentiment clusters from 5,456 Google reviews using K-Means analysis to uncover travel preference insights and inform content personalization strategies.
 
-**Technologies:** Python, K-Means, Clustering, NLP
+**Technologies:** Orange Data Mining
 :::
 
 ::: {.project-card}

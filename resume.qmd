@@ -65,6 +65,20 @@ ETL Pipelines, Large-Scale Data Processing, APIs, Git/GitHub, Jupyter Notebooks,
 ## Projects
 
 ::: {.resume-item}
+![](voterturnout_main.png){.project-image}
+
+### Socioeconomic and Structural Determinants for Voter Turnout in U.S. Elections
+**Georgetown University - DSAN 5100**
+
+- Conducted comprehensive statistical analysis of 23 elections (1980-2024) across 6 states, processing voter turnout data from 138 election observations to identify socioeconomic predictors of political participation
+- Applied advanced statistical methodologies including one-way ANOVA, Welch's ANOVA, chi-square tests, permutation tests, and bootstrap resampling to test relationships between voter turnout and macroeconomic indicators
+- Developed ARIMA time series models forecasting 2026 unemployment rates for three representative states, achieving statistically significant predictions with 95% confidence intervals
+- Integrated data from 5 federal sources (FRED API, FBI Crime Data Explorer, NOAA API, U.S. Census Bureau, UFL Election Lab) using Python and R for comprehensive multi-dimensional analysis
+- Discovered statistically significant relationships: swing states showed 5.47% higher turnout than blue states (p=0.0012), high housing price index states demonstrated ~5% higher presidential turnout (p=0.0007), and medium-crime elections exhibited 4.35 percentage point higher turnout than high-crime elections (p=0.004)
+- Performed rigorous assumption testing (Shapiro-Wilk, Levene's test) and post-hoc analysis (Bonferroni, Games-Howell procedures) to ensure statistical validity across 12+ hypothesis tests
+:::
+
+::: {.resume-item}
 ![](menendez_brothers_cover.png){.project-image}
 
 ### Menendez Brothers Media Narrative Analysis
