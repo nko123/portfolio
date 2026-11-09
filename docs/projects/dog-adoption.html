@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nkem Okweye">
+<meta name="dcterms.date" content="2023-04-01">
+<meta name="description" content="A Jupyter-based Python app with login, service search and an adoption workflow, built from core data structures.">
 
-<title>Interactive Dog Adoption Application – Nkem Okweye | Portfolio</title>
+<title>Woof Woof: a dog adoption app – Nkem Okweye</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,23 +60,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9344fb9851b4da3cab95007ef9d770dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63fd93174cd29d5533588dc9d7e39524.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-151656d6414e98bc50b8f75743da71c9.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63fd93174cd29d5533588dc9d7e39524.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-649d1814fae053c5ea7240abee1fdacb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e2e406f194dd6a7bc0d0e1cc00243056.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-649d1814fae053c5ea7240abee1fdacb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,20 +109,194 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Figtree:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Woof Woof: a dog adoption app – Nkem Okweye">
+<meta property="og:description" content="A Jupyter-based Python app with login, service search and an adoption workflow, built from core data structures.">
+<meta property="og:image" content="https://nko123.github.io/portfolio/projects/assets/img/profile.jpg">
+<meta property="og:site_name" content="Nkem Okweye">
+<meta name="twitter:title" content="Woof Woof: a dog adoption app – Nkem Okweye">
+<meta name="twitter:description" content="A Jupyter-based Python app with login, service search and an adoption workflow, built from core data structures.">
+<meta name="twitter:image" content="https://nko123.github.io/portfolio/projects/assets/img/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Nkem Okweye | Portfolio</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Nkem Okweye</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -125,29 +305,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html#experience"> 
+<span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../work.html"> 
+<span class="menu-text">Work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./skills.html"> 
-<span class="menu-text">Skills</span></a>
+    <a class="nav-link" href="../resume.html"> 
+<span class="menu-text">Résumé</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
-<span class="menu-text">Resume</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../index.html#contact"> 
+<span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -156,57 +339,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#part-1-basic-authentication-and-search" id="toc-part-1-basic-authentication-and-search" class="nav-link" data-scroll-target="#part-1-basic-authentication-and-search">Part 1: Basic Authentication and Search</a>
-  <ul class="collapse">
-  <li><a href="#user-login-system" id="toc-user-login-system" class="nav-link" data-scroll-target="#user-login-system">User Login System</a></li>
-  <li><a href="#service-search-functionality" id="toc-service-search-functionality" class="nav-link" data-scroll-target="#service-search-functionality">Service Search Functionality</a></li>
-  <li><a href="#displaying-search-results" id="toc-displaying-search-results" class="nav-link" data-scroll-target="#displaying-search-results">Displaying Search Results</a></li>
-  </ul></li>
-  <li><a href="#part-2-enhanced-application-with-dictionary-based-data-structures" id="toc-part-2-enhanced-application-with-dictionary-based-data-structures" class="nav-link" data-scroll-target="#part-2-enhanced-application-with-dictionary-based-data-structures">Part 2: Enhanced Application with Dictionary-Based Data Structures</a>
-  <ul class="collapse">
-  <li><a href="#user-authentication-with-dictionaries" id="toc-user-authentication-with-dictionaries" class="nav-link" data-scroll-target="#user-authentication-with-dictionaries">User Authentication with Dictionaries</a></li>
-  <li><a href="#dog-database-structure" id="toc-dog-database-structure" class="nav-link" data-scroll-target="#dog-database-structure">Dog Database Structure</a></li>
-  <li><a href="#enhanced-login-and-service-selection" id="toc-enhanced-login-and-service-selection" class="nav-link" data-scroll-target="#enhanced-login-and-service-selection">Enhanced Login and Service Selection</a></li>
-  <li><a href="#dog-adoption-process" id="toc-dog-adoption-process" class="nav-link" data-scroll-target="#dog-adoption-process">Dog Adoption Process</a></li>
-  <li><a href="#other-services-booking" id="toc-other-services-booking" class="nav-link" data-scroll-target="#other-services-booking">Other Services Booking</a></li>
-  </ul></li>
-  <li><a href="#key-programming-concepts-demonstrated" id="toc-key-programming-concepts-demonstrated" class="nav-link" data-scroll-target="#key-programming-concepts-demonstrated">Key Programming Concepts Demonstrated</a>
-  <ul class="collapse">
-  <li><a href="#data-structures" id="toc-data-structures" class="nav-link" data-scroll-target="#data-structures">Data Structures</a></li>
-  <li><a href="#control-flow" id="toc-control-flow" class="nav-link" data-scroll-target="#control-flow">Control Flow</a></li>
-  <li><a href="#functions-and-methods" id="toc-functions-and-methods" class="nav-link" data-scroll-target="#functions-and-methods">Functions and Methods</a></li>
-  <li><a href="#user-interaction" id="toc-user-interaction" class="nav-link" data-scroll-target="#user-interaction">User Interaction</a></li>
-  </ul></li>
-  <li><a href="#technical-skills-showcased" id="toc-technical-skills-showcased" class="nav-link" data-scroll-target="#technical-skills-showcased">Technical Skills Showcased</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Interactive Dog Adoption Application</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-<p class="subtitle lead">University of Ottawa - ADM 4311</p>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">Woof Woof: a dog adoption app</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">University of Ottawa · ADM 4311</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Python</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A Jupyter-based Python app with login, service search and an adoption workflow, built from core data structures.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Nkem Okweye </p>
-          </div>
-  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 1, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -225,7 +387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="user-login-system" class="level3">
 <h3 class="anchored" data-anchor-id="user-login-system">User Login System</h3>
 <p>The first iteration implements a basic login system using lists to store usernames and passwords.</p>
-<div id="b805b701" class="cell">
+<div id="d507096e" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Login function</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>user_name <span class="op">=</span> [<span class="st">'vbrad'</span>,<span class="st">'nokwe'</span>,<span class="st">'dadel'</span>,<span class="st">'hjami'</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>user_password <span class="op">=</span> [<span class="st">'brad123'</span>,<span class="st">'okwe123'</span>,<span class="st">'johnhancock1977'</span>,<span class="st">'jami1234'</span>]</span>
@@ -246,7 +408,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="service-search-functionality" class="level3">
 <h3 class="anchored" data-anchor-id="service-search-functionality">Service Search Functionality</h3>
 <p>Users can search for available services using partial matching with the <code>startswith()</code> method and <code>in</code> operator.</p>
-<div id="378a5f84" class="cell">
+<div id="191da4b5" class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>stuff <span class="op">=</span> [<span class="st">"Adopt a Dog"</span>, <span class="st">"Foster a Dog "</span>, <span class="st">"Donate a Dog"</span>, <span class="st">"Dog Therapy"</span>,</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Dog Yoga "</span>, <span class="st">"Dog Training"</span>, <span class="st">"Dog Grooming"</span>,<span class="st">"Dog Recipes"</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -267,7 +429,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="displaying-search-results" class="level3">
 <h3 class="anchored" data-anchor-id="displaying-search-results">Displaying Search Results</h3>
-<div id="93f3d1f5" class="cell">
+<div id="fed0aedb" class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if anything was found</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> options_list <span class="op">==</span> []:</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"No results found with search"</span>)</span>
@@ -292,7 +454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="user-authentication-with-dictionaries" class="level3">
 <h3 class="anchored" data-anchor-id="user-authentication-with-dictionaries">User Authentication with Dictionaries</h3>
 <p>The enhanced version uses nested dictionaries for more robust user authentication, mapping usernames to user details.</p>
-<div id="9e18d48c" class="cell">
+<div id="bf6aa077" class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>user_details <span class="op">=</span> {</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'vbrad'</span>: {<span class="st">'firstname'</span>:<span class="st">'valerie'</span>, <span class="st">'lastname'</span>: <span class="st">'bradley'</span>, <span class="st">'password'</span>: <span class="st">'brad123'</span>},</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'nokwe'</span>: {<span class="st">'firstname'</span>:<span class="st">'nkemdibe'</span>, <span class="st">'lastname'</span>: <span class="st">'okweye'</span>, <span class="st">'password'</span>: <span class="st">'okwe123'</span>},</span>
@@ -304,7 +466,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="dog-database-structure" class="level3">
 <h3 class="anchored" data-anchor-id="dog-database-structure">Dog Database Structure</h3>
 <p>A comprehensive database tracks dog information including breed, gender, age, availability status, and attributes.</p>
-<div id="8e23d50b" class="cell">
+<div id="6c09c1bf" class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dog_database <span class="op">=</span> {</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'luna'</span>: {<span class="st">'breed'</span>:<span class="st">'husky'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'12 months'</span>,</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'good with kids'</span>},</span>
@@ -325,7 +487,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="enhanced-login-and-service-selection" class="level3">
 <h3 class="anchored" data-anchor-id="enhanced-login-and-service-selection">Enhanced Login and Service Selection</h3>
-<div id="39dd60e8" class="cell">
+<div id="a538eac0" class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>stuff <span class="op">=</span> [<span class="st">"Adopt a Dog"</span>, <span class="st">"Foster a Dog "</span>, <span class="st">"Dog Therapy"</span>, <span class="st">"Dog Yoga "</span>,</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Dog Training"</span>, <span class="st">"Dog Grooming"</span>]</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -382,7 +544,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="dog-adoption-process" class="level3">
 <h3 class="anchored" data-anchor-id="dog-adoption-process">Dog Adoption Process</h3>
 <p>This section handles the complete adoption workflow, including selection, confirmation, and status updates.</p>
-<div id="6929aa7d" class="cell">
+<div id="488d1042" class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> avail_dog_database <span class="op">!=</span> [] <span class="kw">and</span> options_list[new_num_stuff_selec] <span class="op">==</span> <span class="st">"adopt a dog"</span>:</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i, adog <span class="kw">in</span> <span class="bu">enumerate</span>(avail_dog_database):</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    new_i <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
@@ -411,7 +573,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="other-services-booking" class="level3">
 <h3 class="anchored" data-anchor-id="other-services-booking">Other Services Booking</h3>
 <p>This section manages bookings for services like therapy, yoga, training, and grooming.</p>
-<div id="e9c0cdcf" class="cell">
+<div id="d7834ba2" class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> avail_dog_database <span class="op">!=</span> [] <span class="kw">and</span> options_list[new_num_stuff_selec] <span class="op">!=</span> <span class="st">"adopt a dog"</span>:</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, adog <span class="kw">in</span> <span class="bu">enumerate</span>(avail_dog_database):</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>adog<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'breed'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'gender'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'age'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'attribute'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -481,7 +643,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Input validation and error handling</li>
 <li>Dynamic data updates</li>
 </ul>
-<p><a href="./projects.html" class="btn btn-secondary">← Back to Projects</a></p>
+<p><a href="../work.html" class="btn-pill s">← All projects</a></p>
 
 
 <!-- -->
@@ -491,6 +653,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -612,7 +787,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/nko123\.github\.io\/portfolio");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -626,6 +801,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -940,294 +1120,327 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb9" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Interactive Dog Adoption Application"</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "University of Ottawa - ADM 4311"</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nkem Okweye"</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: false</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co">  enabled: false</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project Overview</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>This interactive Python application, built in Jupyter Notebook, demonstrates fundamental programming concepts through a practical dog adoption and services platform. The application features user authentication, search functionality, and a dynamic booking system for various dog-related services.</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 1: Basic Authentication and Search</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Woof Woof: a dog adoption app"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "University of Ottawa · ADM 4311"</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A Jupyter-based Python app with login, service search and an adoption workflow, built from core data structures."</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2023-04-01</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Python]</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="an">course:</span><span class="co"> "uOttawa · ADM 4311"</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="an">cat_label:</span><span class="co"> "Python"</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="an">stat:</span><span class="co"> "Python"</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="an">stat_text:</span><span class="co"> "lists, dictionaries and control flow"</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: false</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co">  enabled: false</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="fu">### User Login System</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project Overview</span></span>
 <span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>The first iteration implements a basic login system using lists to store usernames and passwords.</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>This interactive Python application, built in Jupyter Notebook, demonstrates fundamental programming concepts through a practical dog adoption and services platform. The application features user authentication, search functionality, and a dynamic booking system for various dog-related services.</span>
 <span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Login function</span></span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>user_name <span class="op">=</span> [<span class="st">'vbrad'</span>,<span class="st">'nokwe'</span>,<span class="st">'dadel'</span>,<span class="st">'hjami'</span>]</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>user_password <span class="op">=</span> [<span class="st">'brad123'</span>,<span class="st">'okwe123'</span>,<span class="st">'johnhancock1977'</span>,<span class="st">'jami1234'</span>]</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>login_username <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your username (Note: Case Sensitive): "</span>)</span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>login_password <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your password (Note: Case Sensitive): "</span>)</span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="co"># For loop to login</span></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> user_name <span class="kw">and</span> user_password:</span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> login_username <span class="kw">in</span> user_name <span class="kw">and</span> login_password <span class="kw">in</span> user_password:</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Login Successful"</span>)</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Username or Password is wrong, Try again"</span>)</span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### Service Search Functionality</span></span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>Users can search for available services using partial matching with the <span class="in">`startswith()`</span> method and <span class="in">`in`</span> operator.</span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>stuff <span class="op">=</span> [<span class="st">"Adopt a Dog"</span>, <span class="st">"Foster a Dog "</span>, <span class="st">"Donate a Dog"</span>, <span class="st">"Dog Therapy"</span>,</span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Dog Yoga "</span>, <span class="st">"Dog Training"</span>, <span class="st">"Dog Grooming"</span>,<span class="st">"Dog Recipes"</span>]</span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Welcome to Woof Woof, a one stop for all things dogs!"</span>)</span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>search_function <span class="op">=</span> <span class="bu">input</span>(<span class="st">"What Service are you looking for today: "</span>)</span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>search_function <span class="op">=</span> search_function.lower()</span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>options_list <span class="op">=</span> []</span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Using a for loop to search for a partial match in the list</span></span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> s <span class="kw">in</span> stuff:</span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>  s <span class="op">=</span> s.lower()</span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>  m <span class="op">=</span> s.startswith((search_function))</span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> m <span class="op">==</span> <span class="va">True</span> <span class="kw">or</span> search_function <span class="kw">in</span> s:</span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>    options_list.append(s)</span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="fu">### Displaying Search Results</span></span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if anything was found</span></span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> options_list <span class="op">==</span> []:</span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"No results found with search"</span>)</span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Here are results that match your search:"</span>)</span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> index, op <span class="kw">in</span> <span class="bu">enumerate</span>(options_list):</span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>        new_index <span class="op">=</span> index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>new_index<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>    num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select an option from the list: "</span>))</span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>    new_num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(num_stuff_selec) <span class="op">-</span> <span class="dv">1</span></span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> new_num_stuff_selec <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_stuff_selec <span class="op">&lt;</span> <span class="bu">len</span>(options_list):</span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss"> and want to view </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss">, which is not on the list.'</span>)</span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 1: Basic Authentication and Search</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### User Login System</span></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>The first iteration implements a basic login system using lists to store usernames and passwords.</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Login function</span></span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>user_name <span class="op">=</span> [<span class="st">'vbrad'</span>,<span class="st">'nokwe'</span>,<span class="st">'dadel'</span>,<span class="st">'hjami'</span>]</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>user_password <span class="op">=</span> [<span class="st">'brad123'</span>,<span class="st">'okwe123'</span>,<span class="st">'johnhancock1977'</span>,<span class="st">'jami1234'</span>]</span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>login_username <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your username (Note: Case Sensitive): "</span>)</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>login_password <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your password (Note: Case Sensitive): "</span>)</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a><span class="co"># For loop to login</span></span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> user_name <span class="kw">and</span> user_password:</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> login_username <span class="kw">in</span> user_name <span class="kw">and</span> login_password <span class="kw">in</span> user_password:</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Login Successful"</span>)</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Username or Password is wrong, Try again"</span>)</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a><span class="fu">### Service Search Functionality</span></span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>Users can search for available services using partial matching with the <span class="in">`startswith()`</span> method and <span class="in">`in`</span> operator.</span>
+<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>stuff <span class="op">=</span> [<span class="st">"Adopt a Dog"</span>, <span class="st">"Foster a Dog "</span>, <span class="st">"Donate a Dog"</span>, <span class="st">"Dog Therapy"</span>,</span>
+<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Dog Yoga "</span>, <span class="st">"Dog Training"</span>, <span class="st">"Dog Grooming"</span>,<span class="st">"Dog Recipes"</span>]</span>
+<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Welcome to Woof Woof, a one stop for all things dogs!"</span>)</span>
+<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>search_function <span class="op">=</span> <span class="bu">input</span>(<span class="st">"What Service are you looking for today: "</span>)</span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>search_function <span class="op">=</span> search_function.lower()</span>
+<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>options_list <span class="op">=</span> []</span>
+<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Using a for loop to search for a partial match in the list</span></span>
+<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> s <span class="kw">in</span> stuff:</span>
+<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a>  s <span class="op">=</span> s.lower()</span>
+<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>  m <span class="op">=</span> s.startswith((search_function))</span>
+<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> m <span class="op">==</span> <span class="va">True</span> <span class="kw">or</span> search_function <span class="kw">in</span> s:</span>
+<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>    options_list.append(s)</span>
+<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### Displaying Search Results</span></span>
+<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if anything was found</span></span>
+<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> options_list <span class="op">==</span> []:</span>
+<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"No results found with search"</span>)</span>
+<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Here are results that match your search:"</span>)</span>
+<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> index, op <span class="kw">in</span> <span class="bu">enumerate</span>(options_list):</span>
+<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>        new_index <span class="op">=</span> index <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>new_index<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>    num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select an option from the list: "</span>))</span>
+<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>    new_num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(num_stuff_selec) <span class="op">-</span> <span class="dv">1</span></span>
 <span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 2: Enhanced Application with Dictionary-Based Data Structures</span></span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a><span class="fu">### User Authentication with Dictionaries</span></span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>The enhanced version uses nested dictionaries for more robust user authentication, mapping usernames to user details.</span>
+<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> new_num_stuff_selec <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_stuff_selec <span class="op">&lt;</span> <span class="bu">len</span>(options_list):</span>
+<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss"> and want to view </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss">, which is not on the list.'</span>)</span>
+<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a>user_details <span class="op">=</span> {</span>
-<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a>    <span class="st">'vbrad'</span>: {<span class="st">'firstname'</span>:<span class="st">'valerie'</span>, <span class="st">'lastname'</span>: <span class="st">'bradley'</span>, <span class="st">'password'</span>: <span class="st">'brad123'</span>},</span>
-<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a>    <span class="st">'nokwe'</span>: {<span class="st">'firstname'</span>:<span class="st">'nkemdibe'</span>, <span class="st">'lastname'</span>: <span class="st">'okweye'</span>, <span class="st">'password'</span>: <span class="st">'okwe123'</span>},</span>
-<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a>    <span class="st">'dadel'</span>: {<span class="st">'firstname'</span>:<span class="st">'daniel'</span>, <span class="st">'lastname'</span>: <span class="st">'adelberg'</span>, <span class="st">'password'</span>: <span class="st">'johnhancock1977'</span>},</span>
-<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a>    <span class="st">'hjami'</span>: {<span class="st">'firstname'</span>:<span class="st">'hisham'</span>, <span class="st">'lastname'</span>: <span class="st">'jamil'</span>, <span class="st">'password'</span>: <span class="st">'jami1234'</span>}</span>
-<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dog Database Structure</span></span>
-<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a>A comprehensive database tracks dog information including breed, gender, age, availability status, and attributes.</span>
-<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a>dog_database <span class="op">=</span> {</span>
-<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a>    <span class="st">'luna'</span>: {<span class="st">'breed'</span>:<span class="st">'husky'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'12 months'</span>,</span>
-<span id="cb9-127"><a href="#cb9-127" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'good with kids'</span>},</span>
-<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a>    <span class="st">'rex'</span>: {<span class="st">'breed'</span>:<span class="st">'german shepherd'</span>, <span class="st">'gender'</span>:<span class="st">'male'</span>, <span class="st">'age'</span>: <span class="st">'6 months'</span>,</span>
-<span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a>            <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'good around other dogs'</span>},</span>
-<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a>    <span class="st">'prince'</span>: {<span class="st">'breed'</span>:<span class="st">'doberman'</span>, <span class="st">'gender'</span>:<span class="st">'male'</span>, <span class="st">'age'</span>: <span class="st">'2 years'</span>,</span>
-<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a>               <span class="st">'status'</span>: <span class="st">'unavailable'</span>,<span class="st">'attribute'</span>: <span class="st">'friendly'</span>},</span>
-<span id="cb9-132"><a href="#cb9-132" aria-hidden="true" tabindex="-1"></a>    <span class="st">'daisy'</span>: {<span class="st">'breed'</span>:<span class="st">'goldendoodle'</span>, <span class="st">'gender'</span>:<span class="st">'male'</span>, <span class="st">'age'</span>: <span class="st">'2 years'</span>,</span>
-<span id="cb9-133"><a href="#cb9-133" aria-hidden="true" tabindex="-1"></a>              <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'energetic'</span>},</span>
-<span id="cb9-134"><a href="#cb9-134" aria-hidden="true" tabindex="-1"></a>    <span class="st">'koda'</span>: {<span class="st">'breed'</span>:<span class="st">'samoyed'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'4 months'</span>,</span>
-<span id="cb9-135"><a href="#cb9-135" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'unavailable'</span>,<span class="st">'attribute'</span>: <span class="st">'playful'</span>},</span>
-<span id="cb9-136"><a href="#cb9-136" aria-hidden="true" tabindex="-1"></a>    <span class="st">'mona'</span>: {<span class="st">'breed'</span>:<span class="st">'husky'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'7 months'</span>,</span>
-<span id="cb9-137"><a href="#cb9-137" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'nice'</span>},</span>
-<span id="cb9-138"><a href="#cb9-138" aria-hidden="true" tabindex="-1"></a>    <span class="st">'lola'</span>: {<span class="st">'breed'</span>:<span class="st">'dalmation'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'2 months'</span>,</span>
-<span id="cb9-139"><a href="#cb9-139" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'protective'</span>}</span>
-<span id="cb9-140"><a href="#cb9-140" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-141"><a href="#cb9-141" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-142"><a href="#cb9-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-143"><a href="#cb9-143" aria-hidden="true" tabindex="-1"></a><span class="fu">### Enhanced Login and Service Selection</span></span>
-<span id="cb9-144"><a href="#cb9-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-147"><a href="#cb9-147" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-148"><a href="#cb9-148" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-149"><a href="#cb9-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-150"><a href="#cb9-150" aria-hidden="true" tabindex="-1"></a>stuff <span class="op">=</span> [<span class="st">"Adopt a Dog"</span>, <span class="st">"Foster a Dog "</span>, <span class="st">"Dog Therapy"</span>, <span class="st">"Dog Yoga "</span>,</span>
-<span id="cb9-151"><a href="#cb9-151" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Dog Training"</span>, <span class="st">"Dog Grooming"</span>]</span>
-<span id="cb9-152"><a href="#cb9-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-153"><a href="#cb9-153" aria-hidden="true" tabindex="-1"></a>options_list, avail_dog_database <span class="op">=</span> [], []</span>
-<span id="cb9-154"><a href="#cb9-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-155"><a href="#cb9-155" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if the user's name matches their password</span></span>
-<span id="cb9-156"><a href="#cb9-156" aria-hidden="true" tabindex="-1"></a>login_user <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your username (Note: Case Sensitive): "</span>)</span>
-<span id="cb9-157"><a href="#cb9-157" aria-hidden="true" tabindex="-1"></a>login_pass <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your password (Note: Case Sensitive): "</span>)</span>
+<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 2: Enhanced Application with Dictionary-Based Data Structures</span></span>
+<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a><span class="fu">### User Authentication with Dictionaries</span></span>
+<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a>The enhanced version uses nested dictionaries for more robust user authentication, mapping usernames to user details.</span>
+<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a>user_details <span class="op">=</span> {</span>
+<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a>    <span class="st">'vbrad'</span>: {<span class="st">'firstname'</span>:<span class="st">'valerie'</span>, <span class="st">'lastname'</span>: <span class="st">'bradley'</span>, <span class="st">'password'</span>: <span class="st">'brad123'</span>},</span>
+<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a>    <span class="st">'nokwe'</span>: {<span class="st">'firstname'</span>:<span class="st">'nkemdibe'</span>, <span class="st">'lastname'</span>: <span class="st">'okweye'</span>, <span class="st">'password'</span>: <span class="st">'okwe123'</span>},</span>
+<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a>    <span class="st">'dadel'</span>: {<span class="st">'firstname'</span>:<span class="st">'daniel'</span>, <span class="st">'lastname'</span>: <span class="st">'adelberg'</span>, <span class="st">'password'</span>: <span class="st">'johnhancock1977'</span>},</span>
+<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a>    <span class="st">'hjami'</span>: {<span class="st">'firstname'</span>:<span class="st">'hisham'</span>, <span class="st">'lastname'</span>: <span class="st">'jamil'</span>, <span class="st">'password'</span>: <span class="st">'jami1234'</span>}</span>
+<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dog Database Structure</span></span>
+<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a>A comprehensive database tracks dog information including breed, gender, age, availability status, and attributes.</span>
+<span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a>dog_database <span class="op">=</span> {</span>
+<span id="cb9-132"><a href="#cb9-132" aria-hidden="true" tabindex="-1"></a>    <span class="st">'luna'</span>: {<span class="st">'breed'</span>:<span class="st">'husky'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'12 months'</span>,</span>
+<span id="cb9-133"><a href="#cb9-133" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'good with kids'</span>},</span>
+<span id="cb9-134"><a href="#cb9-134" aria-hidden="true" tabindex="-1"></a>    <span class="st">'rex'</span>: {<span class="st">'breed'</span>:<span class="st">'german shepherd'</span>, <span class="st">'gender'</span>:<span class="st">'male'</span>, <span class="st">'age'</span>: <span class="st">'6 months'</span>,</span>
+<span id="cb9-135"><a href="#cb9-135" aria-hidden="true" tabindex="-1"></a>            <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'good around other dogs'</span>},</span>
+<span id="cb9-136"><a href="#cb9-136" aria-hidden="true" tabindex="-1"></a>    <span class="st">'prince'</span>: {<span class="st">'breed'</span>:<span class="st">'doberman'</span>, <span class="st">'gender'</span>:<span class="st">'male'</span>, <span class="st">'age'</span>: <span class="st">'2 years'</span>,</span>
+<span id="cb9-137"><a href="#cb9-137" aria-hidden="true" tabindex="-1"></a>               <span class="st">'status'</span>: <span class="st">'unavailable'</span>,<span class="st">'attribute'</span>: <span class="st">'friendly'</span>},</span>
+<span id="cb9-138"><a href="#cb9-138" aria-hidden="true" tabindex="-1"></a>    <span class="st">'daisy'</span>: {<span class="st">'breed'</span>:<span class="st">'goldendoodle'</span>, <span class="st">'gender'</span>:<span class="st">'male'</span>, <span class="st">'age'</span>: <span class="st">'2 years'</span>,</span>
+<span id="cb9-139"><a href="#cb9-139" aria-hidden="true" tabindex="-1"></a>              <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'energetic'</span>},</span>
+<span id="cb9-140"><a href="#cb9-140" aria-hidden="true" tabindex="-1"></a>    <span class="st">'koda'</span>: {<span class="st">'breed'</span>:<span class="st">'samoyed'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'4 months'</span>,</span>
+<span id="cb9-141"><a href="#cb9-141" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'unavailable'</span>,<span class="st">'attribute'</span>: <span class="st">'playful'</span>},</span>
+<span id="cb9-142"><a href="#cb9-142" aria-hidden="true" tabindex="-1"></a>    <span class="st">'mona'</span>: {<span class="st">'breed'</span>:<span class="st">'husky'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'7 months'</span>,</span>
+<span id="cb9-143"><a href="#cb9-143" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'nice'</span>},</span>
+<span id="cb9-144"><a href="#cb9-144" aria-hidden="true" tabindex="-1"></a>    <span class="st">'lola'</span>: {<span class="st">'breed'</span>:<span class="st">'dalmation'</span>, <span class="st">'gender'</span>:<span class="st">'female'</span>, <span class="st">'age'</span>: <span class="st">'2 months'</span>,</span>
+<span id="cb9-145"><a href="#cb9-145" aria-hidden="true" tabindex="-1"></a>             <span class="st">'status'</span>: <span class="st">'available'</span>,<span class="st">'attribute'</span>: <span class="st">'protective'</span>}</span>
+<span id="cb9-146"><a href="#cb9-146" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-147"><a href="#cb9-147" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-148"><a href="#cb9-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-149"><a href="#cb9-149" aria-hidden="true" tabindex="-1"></a><span class="fu">### Enhanced Login and Service Selection</span></span>
+<span id="cb9-150"><a href="#cb9-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-153"><a href="#cb9-153" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-154"><a href="#cb9-154" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-155"><a href="#cb9-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-156"><a href="#cb9-156" aria-hidden="true" tabindex="-1"></a>stuff <span class="op">=</span> [<span class="st">"Adopt a Dog"</span>, <span class="st">"Foster a Dog "</span>, <span class="st">"Dog Therapy"</span>, <span class="st">"Dog Yoga "</span>,</span>
+<span id="cb9-157"><a href="#cb9-157" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Dog Training"</span>, <span class="st">"Dog Grooming"</span>]</span>
 <span id="cb9-158"><a href="#cb9-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-159"><a href="#cb9-159" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> user <span class="kw">in</span> user_details:</span>
-<span id="cb9-160"><a href="#cb9-160" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> login_user <span class="kw">in</span> user_details <span class="kw">and</span> login_pass <span class="op">==</span> user_details[login_user][<span class="st">'password'</span>]:</span>
-<span id="cb9-161"><a href="#cb9-161" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Login Successful"</span>)</span>
-<span id="cb9-162"><a href="#cb9-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-163"><a href="#cb9-163" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Welcome </span><span class="sc">{</span>user_details[login_user][<span class="st">'firstname'</span>]<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>user_details[login_user][<span class="st">'lastname'</span>]<span class="sc">}</span><span class="ss"> to Woof Woof, a one-stop for all things dogs!"</span>)</span>
-<span id="cb9-164"><a href="#cb9-164" aria-hidden="true" tabindex="-1"></a>    search_function <span class="op">=</span> <span class="bu">input</span>(<span class="st">"What Service are you looking for today: "</span>)</span>
-<span id="cb9-165"><a href="#cb9-165" aria-hidden="true" tabindex="-1"></a>    search_function <span class="op">=</span> search_function.lower()</span>
-<span id="cb9-166"><a href="#cb9-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-167"><a href="#cb9-167" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Search for matching services</span></span>
-<span id="cb9-168"><a href="#cb9-168" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> s <span class="kw">in</span> stuff:</span>
-<span id="cb9-169"><a href="#cb9-169" aria-hidden="true" tabindex="-1"></a>      s <span class="op">=</span> s.lower()</span>
-<span id="cb9-170"><a href="#cb9-170" aria-hidden="true" tabindex="-1"></a>      m <span class="op">=</span> s.startswith((search_function))</span>
-<span id="cb9-171"><a href="#cb9-171" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> m <span class="op">==</span> <span class="va">True</span> <span class="kw">or</span> search_function <span class="kw">in</span> s:</span>
-<span id="cb9-172"><a href="#cb9-172" aria-hidden="true" tabindex="-1"></a>        options_list.append(s)</span>
-<span id="cb9-173"><a href="#cb9-173" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
-<span id="cb9-174"><a href="#cb9-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-175"><a href="#cb9-175" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> options_list <span class="op">!=</span> []:</span>
-<span id="cb9-176"><a href="#cb9-176" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"Here are results that match your search:"</span>)</span>
-<span id="cb9-177"><a href="#cb9-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-178"><a href="#cb9-178" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> index, op <span class="kw">in</span> <span class="bu">enumerate</span>(options_list):</span>
-<span id="cb9-179"><a href="#cb9-179" aria-hidden="true" tabindex="-1"></a>        new_index <span class="op">=</span> index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb9-180"><a href="#cb9-180" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>new_index<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-181"><a href="#cb9-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-182"><a href="#cb9-182" aria-hidden="true" tabindex="-1"></a>      num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select an option from the list: "</span>))</span>
-<span id="cb9-183"><a href="#cb9-183" aria-hidden="true" tabindex="-1"></a>      new_num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(num_stuff_selec) <span class="op">-</span> <span class="dv">1</span></span>
-<span id="cb9-184"><a href="#cb9-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-185"><a href="#cb9-185" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Check if the number entered is valid</span></span>
-<span id="cb9-186"><a href="#cb9-186" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> new_num_stuff_selec <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_stuff_selec <span class="op">&lt;</span> <span class="bu">len</span>(options_list):</span>
-<span id="cb9-187"><a href="#cb9-187" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss"> and want to view </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb9-188"><a href="#cb9-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-189"><a href="#cb9-189" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Here are the dogs available:'</span>)</span>
-<span id="cb9-190"><a href="#cb9-190" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> dog <span class="kw">in</span> dog_database:</span>
-<span id="cb9-191"><a href="#cb9-191" aria-hidden="true" tabindex="-1"></a>          <span class="cf">if</span> dog_database[dog][<span class="st">'status'</span>] <span class="op">==</span> <span class="st">'available'</span>:</span>
-<span id="cb9-192"><a href="#cb9-192" aria-hidden="true" tabindex="-1"></a>            avail_dog_database.append(dog)</span>
-<span id="cb9-193"><a href="#cb9-193" aria-hidden="true" tabindex="-1"></a>      <span class="cf">else</span>:</span>
-<span id="cb9-194"><a href="#cb9-194" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss">, which is not on the list.'</span>)</span>
-<span id="cb9-195"><a href="#cb9-195" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
-<span id="cb9-196"><a href="#cb9-196" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb9-197"><a href="#cb9-197" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"No results found with search"</span>)</span>
-<span id="cb9-198"><a href="#cb9-198" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb9-199"><a href="#cb9-199" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Username or Password is wrong, Try again"</span>)</span>
-<span id="cb9-200"><a href="#cb9-200" aria-hidden="true" tabindex="-1"></a>  <span class="cf">break</span></span>
-<span id="cb9-201"><a href="#cb9-201" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-202"><a href="#cb9-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-203"><a href="#cb9-203" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dog Adoption Process</span></span>
-<span id="cb9-204"><a href="#cb9-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-205"><a href="#cb9-205" aria-hidden="true" tabindex="-1"></a>This section handles the complete adoption workflow, including selection, confirmation, and status updates.</span>
-<span id="cb9-206"><a href="#cb9-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-209"><a href="#cb9-209" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-210"><a href="#cb9-210" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-211"><a href="#cb9-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-212"><a href="#cb9-212" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> avail_dog_database <span class="op">!=</span> [] <span class="kw">and</span> options_list[new_num_stuff_selec] <span class="op">==</span> <span class="st">"adopt a dog"</span>:</span>
-<span id="cb9-213"><a href="#cb9-213" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i, adog <span class="kw">in</span> <span class="bu">enumerate</span>(avail_dog_database):</span>
-<span id="cb9-214"><a href="#cb9-214" aria-hidden="true" tabindex="-1"></a>    new_i <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb9-215"><a href="#cb9-215" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>new_i<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>adog<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'breed'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'gender'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'age'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'attribute'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-216"><a href="#cb9-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-217"><a href="#cb9-217" aria-hidden="true" tabindex="-1"></a>  num_avail_dog <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select a dog from the list: "</span>))</span>
-<span id="cb9-218"><a href="#cb9-218" aria-hidden="true" tabindex="-1"></a>  new_num_avail_dog <span class="op">=</span> <span class="bu">int</span>(num_avail_dog) <span class="op">-</span> <span class="dv">1</span></span>
-<span id="cb9-219"><a href="#cb9-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-220"><a href="#cb9-220" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> new_num_avail_dog <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_avail_dog <span class="op">&lt;</span> <span class="bu">len</span>(avail_dog_database):</span>
-<span id="cb9-221"><a href="#cb9-221" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb9-159"><a href="#cb9-159" aria-hidden="true" tabindex="-1"></a>options_list, avail_dog_database <span class="op">=</span> [], []</span>
+<span id="cb9-160"><a href="#cb9-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-161"><a href="#cb9-161" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if the user's name matches their password</span></span>
+<span id="cb9-162"><a href="#cb9-162" aria-hidden="true" tabindex="-1"></a>login_user <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your username (Note: Case Sensitive): "</span>)</span>
+<span id="cb9-163"><a href="#cb9-163" aria-hidden="true" tabindex="-1"></a>login_pass <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your password (Note: Case Sensitive): "</span>)</span>
+<span id="cb9-164"><a href="#cb9-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-165"><a href="#cb9-165" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> user <span class="kw">in</span> user_details:</span>
+<span id="cb9-166"><a href="#cb9-166" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> login_user <span class="kw">in</span> user_details <span class="kw">and</span> login_pass <span class="op">==</span> user_details[login_user][<span class="st">'password'</span>]:</span>
+<span id="cb9-167"><a href="#cb9-167" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Login Successful"</span>)</span>
+<span id="cb9-168"><a href="#cb9-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-169"><a href="#cb9-169" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Welcome </span><span class="sc">{</span>user_details[login_user][<span class="st">'firstname'</span>]<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>user_details[login_user][<span class="st">'lastname'</span>]<span class="sc">}</span><span class="ss"> to Woof Woof, a one-stop for all things dogs!"</span>)</span>
+<span id="cb9-170"><a href="#cb9-170" aria-hidden="true" tabindex="-1"></a>    search_function <span class="op">=</span> <span class="bu">input</span>(<span class="st">"What Service are you looking for today: "</span>)</span>
+<span id="cb9-171"><a href="#cb9-171" aria-hidden="true" tabindex="-1"></a>    search_function <span class="op">=</span> search_function.lower()</span>
+<span id="cb9-172"><a href="#cb9-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-173"><a href="#cb9-173" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Search for matching services</span></span>
+<span id="cb9-174"><a href="#cb9-174" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> s <span class="kw">in</span> stuff:</span>
+<span id="cb9-175"><a href="#cb9-175" aria-hidden="true" tabindex="-1"></a>      s <span class="op">=</span> s.lower()</span>
+<span id="cb9-176"><a href="#cb9-176" aria-hidden="true" tabindex="-1"></a>      m <span class="op">=</span> s.startswith((search_function))</span>
+<span id="cb9-177"><a href="#cb9-177" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> m <span class="op">==</span> <span class="va">True</span> <span class="kw">or</span> search_function <span class="kw">in</span> s:</span>
+<span id="cb9-178"><a href="#cb9-178" aria-hidden="true" tabindex="-1"></a>        options_list.append(s)</span>
+<span id="cb9-179"><a href="#cb9-179" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb9-180"><a href="#cb9-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-181"><a href="#cb9-181" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> options_list <span class="op">!=</span> []:</span>
+<span id="cb9-182"><a href="#cb9-182" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"Here are results that match your search:"</span>)</span>
+<span id="cb9-183"><a href="#cb9-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-184"><a href="#cb9-184" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> index, op <span class="kw">in</span> <span class="bu">enumerate</span>(options_list):</span>
+<span id="cb9-185"><a href="#cb9-185" aria-hidden="true" tabindex="-1"></a>        new_index <span class="op">=</span> index <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb9-186"><a href="#cb9-186" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>new_index<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>op<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-187"><a href="#cb9-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-188"><a href="#cb9-188" aria-hidden="true" tabindex="-1"></a>      num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select an option from the list: "</span>))</span>
+<span id="cb9-189"><a href="#cb9-189" aria-hidden="true" tabindex="-1"></a>      new_num_stuff_selec <span class="op">=</span> <span class="bu">int</span>(num_stuff_selec) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb9-190"><a href="#cb9-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-191"><a href="#cb9-191" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Check if the number entered is valid</span></span>
+<span id="cb9-192"><a href="#cb9-192" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> new_num_stuff_selec <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_stuff_selec <span class="op">&lt;</span> <span class="bu">len</span>(options_list):</span>
+<span id="cb9-193"><a href="#cb9-193" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss"> and want to view </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb9-194"><a href="#cb9-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-195"><a href="#cb9-195" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Here are the dogs available:'</span>)</span>
+<span id="cb9-196"><a href="#cb9-196" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> dog <span class="kw">in</span> dog_database:</span>
+<span id="cb9-197"><a href="#cb9-197" aria-hidden="true" tabindex="-1"></a>          <span class="cf">if</span> dog_database[dog][<span class="st">'status'</span>] <span class="op">==</span> <span class="st">'available'</span>:</span>
+<span id="cb9-198"><a href="#cb9-198" aria-hidden="true" tabindex="-1"></a>            avail_dog_database.append(dog)</span>
+<span id="cb9-199"><a href="#cb9-199" aria-hidden="true" tabindex="-1"></a>      <span class="cf">else</span>:</span>
+<span id="cb9-200"><a href="#cb9-200" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_stuff_selec<span class="sc">}</span><span class="ss">, which is not on the list.'</span>)</span>
+<span id="cb9-201"><a href="#cb9-201" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb9-202"><a href="#cb9-202" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb9-203"><a href="#cb9-203" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"No results found with search"</span>)</span>
+<span id="cb9-204"><a href="#cb9-204" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb9-205"><a href="#cb9-205" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Username or Password is wrong, Try again"</span>)</span>
+<span id="cb9-206"><a href="#cb9-206" aria-hidden="true" tabindex="-1"></a>  <span class="cf">break</span></span>
+<span id="cb9-207"><a href="#cb9-207" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-208"><a href="#cb9-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-209"><a href="#cb9-209" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dog Adoption Process</span></span>
+<span id="cb9-210"><a href="#cb9-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-211"><a href="#cb9-211" aria-hidden="true" tabindex="-1"></a>This section handles the complete adoption workflow, including selection, confirmation, and status updates.</span>
+<span id="cb9-212"><a href="#cb9-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-215"><a href="#cb9-215" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-216"><a href="#cb9-216" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-217"><a href="#cb9-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-218"><a href="#cb9-218" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> avail_dog_database <span class="op">!=</span> [] <span class="kw">and</span> options_list[new_num_stuff_selec] <span class="op">==</span> <span class="st">"adopt a dog"</span>:</span>
+<span id="cb9-219"><a href="#cb9-219" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i, adog <span class="kw">in</span> <span class="bu">enumerate</span>(avail_dog_database):</span>
+<span id="cb9-220"><a href="#cb9-220" aria-hidden="true" tabindex="-1"></a>    new_i <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb9-221"><a href="#cb9-221" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>new_i<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>adog<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'breed'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'gender'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'age'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'attribute'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb9-222"><a href="#cb9-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-223"><a href="#cb9-223" aria-hidden="true" tabindex="-1"></a>    adopt_choice <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter Yes to confirm adoptions and No to cancel: "</span>)</span>
-<span id="cb9-224"><a href="#cb9-224" aria-hidden="true" tabindex="-1"></a>    adopt_choice <span class="op">=</span> adopt_choice.lower()</span>
+<span id="cb9-223"><a href="#cb9-223" aria-hidden="true" tabindex="-1"></a>  num_avail_dog <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select a dog from the list: "</span>))</span>
+<span id="cb9-224"><a href="#cb9-224" aria-hidden="true" tabindex="-1"></a>  new_num_avail_dog <span class="op">=</span> <span class="bu">int</span>(num_avail_dog) <span class="op">-</span> <span class="dv">1</span></span>
 <span id="cb9-225"><a href="#cb9-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-226"><a href="#cb9-226" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> adopt_choice <span class="op">==</span> <span class="st">"yes"</span>:</span>
-<span id="cb9-227"><a href="#cb9-227" aria-hidden="true" tabindex="-1"></a>      dog_database[avail_dog_database[new_num_avail_dog]][<span class="st">'status'</span>]<span class="op">=</span><span class="st">'unavailable'</span></span>
+<span id="cb9-226"><a href="#cb9-226" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> new_num_avail_dog <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_avail_dog <span class="op">&lt;</span> <span class="bu">len</span>(avail_dog_database):</span>
+<span id="cb9-227"><a href="#cb9-227" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss">'</span>)</span>
 <span id="cb9-228"><a href="#cb9-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-229"><a href="#cb9-229" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f'Your adoption process of </span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss"> is complete'</span>)</span>
-<span id="cb9-230"><a href="#cb9-230" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss"> status has now been updated to </span><span class="sc">{</span>dog_database[avail_dog_database[new_num_avail_dog]][<span class="st">'status'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-231"><a href="#cb9-231" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb9-232"><a href="#cb9-232" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f'Your adoption process of </span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss"> was not complete'</span>)</span>
-<span id="cb9-233"><a href="#cb9-233" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb9-234"><a href="#cb9-234" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_avail_dog<span class="sc">}</span><span class="ss">, which is not on the list'</span>)</span>
-<span id="cb9-235"><a href="#cb9-235" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-236"><a href="#cb9-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-237"><a href="#cb9-237" aria-hidden="true" tabindex="-1"></a><span class="fu">### Other Services Booking</span></span>
-<span id="cb9-238"><a href="#cb9-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-239"><a href="#cb9-239" aria-hidden="true" tabindex="-1"></a>This section manages bookings for services like therapy, yoga, training, and grooming.</span>
-<span id="cb9-240"><a href="#cb9-240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-243"><a href="#cb9-243" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-244"><a href="#cb9-244" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb9-245"><a href="#cb9-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-246"><a href="#cb9-246" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> avail_dog_database <span class="op">!=</span> [] <span class="kw">and</span> options_list[new_num_stuff_selec] <span class="op">!=</span> <span class="st">"adopt a dog"</span>:</span>
-<span id="cb9-247"><a href="#cb9-247" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, adog <span class="kw">in</span> <span class="bu">enumerate</span>(avail_dog_database):</span>
-<span id="cb9-248"><a href="#cb9-248" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>adog<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'breed'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'gender'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'age'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'attribute'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-249"><a href="#cb9-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-250"><a href="#cb9-250" aria-hidden="true" tabindex="-1"></a>    num_service_dog <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select a dog from the list for the service: "</span>))</span>
-<span id="cb9-251"><a href="#cb9-251" aria-hidden="true" tabindex="-1"></a>    new_num_service_dog <span class="op">=</span> num_service_dog <span class="op">-</span> <span class="dv">1</span></span>
-<span id="cb9-252"><a href="#cb9-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-253"><a href="#cb9-253" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> new_num_service_dog <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_service_dog <span class="op">&lt;</span> <span class="bu">len</span>(avail_dog_database):</span>
-<span id="cb9-254"><a href="#cb9-254" aria-hidden="true" tabindex="-1"></a>        selected_dog <span class="op">=</span> avail_dog_database[new_num_service_dog]</span>
-<span id="cb9-255"><a href="#cb9-255" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>selected_dog<span class="sc">}</span><span class="ss"> for </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">.'</span>)</span>
-<span id="cb9-256"><a href="#cb9-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-257"><a href="#cb9-257" aria-hidden="true" tabindex="-1"></a>        confirm_choice <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter Yes to confirm and No to cancel: "</span>).lower()</span>
-<span id="cb9-258"><a href="#cb9-258" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> confirm_choice <span class="op">==</span> <span class="st">"yes"</span>:</span>
-<span id="cb9-259"><a href="#cb9-259" aria-hidden="true" tabindex="-1"></a>            dog_database[selected_dog][<span class="st">'status'</span>] <span class="op">=</span> <span class="st">'unavailable'</span></span>
-<span id="cb9-260"><a href="#cb9-260" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>selected_dog<span class="sc">}</span><span class="ss"> has been booked for </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">.'</span>)</span>
-<span id="cb9-261"><a href="#cb9-261" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>avail_dog_database[new_num_service_dog]<span class="sc">}</span><span class="ss"> status has now been updated to </span><span class="sc">{</span>dog_database[avail_dog_database[new_num_service_dog]][<span class="st">'status'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-262"><a href="#cb9-262" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb9-263"><a href="#cb9-263" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f'Your booking of </span><span class="sc">{</span>selected_dog<span class="sc">}</span><span class="ss"> for </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss"> was not complete.'</span>)</span>
-<span id="cb9-264"><a href="#cb9-264" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb9-265"><a href="#cb9-265" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_service_dog<span class="sc">}</span><span class="ss">, which is not on the list.'</span>)</span>
-<span id="cb9-266"><a href="#cb9-266" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-267"><a href="#cb9-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-268"><a href="#cb9-268" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Programming Concepts Demonstrated</span></span>
-<span id="cb9-269"><a href="#cb9-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-270"><a href="#cb9-270" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Structures</span></span>
-<span id="cb9-271"><a href="#cb9-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Lists**: Used for storing usernames, passwords, and search results</span>
-<span id="cb9-272"><a href="#cb9-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Dictionaries**: Nested dictionaries for user details and dog database</span>
-<span id="cb9-273"><a href="#cb9-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**List/Dictionary Manipulation**: Adding, accessing, and modifying data</span>
-<span id="cb9-274"><a href="#cb9-274" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-275"><a href="#cb9-275" aria-hidden="true" tabindex="-1"></a><span class="fu">### Control Flow</span></span>
-<span id="cb9-276"><a href="#cb9-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**For Loops**: Iterating through lists and dictionaries</span>
-<span id="cb9-277"><a href="#cb9-277" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Conditional Statements**: If/else logic for authentication and validation</span>
-<span id="cb9-278"><a href="#cb9-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Break Statements**: Controlling loop execution</span>
-<span id="cb9-279"><a href="#cb9-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-280"><a href="#cb9-280" aria-hidden="true" tabindex="-1"></a><span class="fu">### Functions and Methods</span></span>
-<span id="cb9-281"><a href="#cb9-281" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**String Methods**: <span class="in">`.lower()`</span>, <span class="in">`.startswith()`</span></span>
-<span id="cb9-282"><a href="#cb9-282" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Built-in Functions**: <span class="in">`enumerate()`</span>, <span class="in">`input()`</span>, <span class="in">`print()`</span>, <span class="in">`int()`</span></span>
-<span id="cb9-283"><a href="#cb9-283" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Operators**: <span class="in">`in`</span> operator for membership testing</span>
-<span id="cb9-284"><a href="#cb9-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-285"><a href="#cb9-285" aria-hidden="true" tabindex="-1"></a><span class="fu">### User Interaction</span></span>
-<span id="cb9-286"><a href="#cb9-286" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input Validation**: Checking if selections are within valid ranges</span>
-<span id="cb9-287"><a href="#cb9-287" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Confirmation Workflows**: Two-step process for critical actions</span>
-<span id="cb9-288"><a href="#cb9-288" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Status Updates**: Real-time updates to database status fields</span>
-<span id="cb9-289"><a href="#cb9-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-290"><a href="#cb9-290" aria-hidden="true" tabindex="-1"></a><span class="fu">## Technical Skills Showcased</span></span>
-<span id="cb9-291"><a href="#cb9-291" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-292"><a href="#cb9-292" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python fundamentals (loops, conditionals, functions)</span>
-<span id="cb9-293"><a href="#cb9-293" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data structure implementation (lists, dictionaries)</span>
-<span id="cb9-294"><a href="#cb9-294" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>User authentication systems</span>
-<span id="cb9-295"><a href="#cb9-295" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Search algorithms</span>
-<span id="cb9-296"><a href="#cb9-296" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>State management</span>
-<span id="cb9-297"><a href="#cb9-297" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Input validation and error handling</span>
-<span id="cb9-298"><a href="#cb9-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dynamic data updates</span>
-<span id="cb9-299"><a href="#cb9-299" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-300"><a href="#cb9-300" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">← Back to Projects</span><span class="co">](projects.qmd)</span>{.btn .btn-secondary}</span>
+<span id="cb9-229"><a href="#cb9-229" aria-hidden="true" tabindex="-1"></a>    adopt_choice <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter Yes to confirm adoptions and No to cancel: "</span>)</span>
+<span id="cb9-230"><a href="#cb9-230" aria-hidden="true" tabindex="-1"></a>    adopt_choice <span class="op">=</span> adopt_choice.lower()</span>
+<span id="cb9-231"><a href="#cb9-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-232"><a href="#cb9-232" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> adopt_choice <span class="op">==</span> <span class="st">"yes"</span>:</span>
+<span id="cb9-233"><a href="#cb9-233" aria-hidden="true" tabindex="-1"></a>      dog_database[avail_dog_database[new_num_avail_dog]][<span class="st">'status'</span>]<span class="op">=</span><span class="st">'unavailable'</span></span>
+<span id="cb9-234"><a href="#cb9-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-235"><a href="#cb9-235" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f'Your adoption process of </span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss"> is complete'</span>)</span>
+<span id="cb9-236"><a href="#cb9-236" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss"> status has now been updated to </span><span class="sc">{</span>dog_database[avail_dog_database[new_num_avail_dog]][<span class="st">'status'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-237"><a href="#cb9-237" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb9-238"><a href="#cb9-238" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f'Your adoption process of </span><span class="sc">{</span>avail_dog_database[new_num_avail_dog]<span class="sc">}</span><span class="ss"> was not complete'</span>)</span>
+<span id="cb9-239"><a href="#cb9-239" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb9-240"><a href="#cb9-240" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_avail_dog<span class="sc">}</span><span class="ss">, which is not on the list'</span>)</span>
+<span id="cb9-241"><a href="#cb9-241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-242"><a href="#cb9-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-243"><a href="#cb9-243" aria-hidden="true" tabindex="-1"></a><span class="fu">### Other Services Booking</span></span>
+<span id="cb9-244"><a href="#cb9-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-245"><a href="#cb9-245" aria-hidden="true" tabindex="-1"></a>This section manages bookings for services like therapy, yoga, training, and grooming.</span>
+<span id="cb9-246"><a href="#cb9-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-249"><a href="#cb9-249" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-250"><a href="#cb9-250" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb9-251"><a href="#cb9-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-252"><a href="#cb9-252" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> avail_dog_database <span class="op">!=</span> [] <span class="kw">and</span> options_list[new_num_stuff_selec] <span class="op">!=</span> <span class="st">"adopt a dog"</span>:</span>
+<span id="cb9-253"><a href="#cb9-253" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, adog <span class="kw">in</span> <span class="bu">enumerate</span>(avail_dog_database):</span>
+<span id="cb9-254"><a href="#cb9-254" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>adog<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'breed'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'gender'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'age'</span>]<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>dog_database[adog][<span class="st">'attribute'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-255"><a href="#cb9-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-256"><a href="#cb9-256" aria-hidden="true" tabindex="-1"></a>    num_service_dog <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Select a dog from the list for the service: "</span>))</span>
+<span id="cb9-257"><a href="#cb9-257" aria-hidden="true" tabindex="-1"></a>    new_num_service_dog <span class="op">=</span> num_service_dog <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb9-258"><a href="#cb9-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-259"><a href="#cb9-259" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> new_num_service_dog <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> new_num_service_dog <span class="op">&lt;</span> <span class="bu">len</span>(avail_dog_database):</span>
+<span id="cb9-260"><a href="#cb9-260" aria-hidden="true" tabindex="-1"></a>        selected_dog <span class="op">=</span> avail_dog_database[new_num_service_dog]</span>
+<span id="cb9-261"><a href="#cb9-261" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have chosen </span><span class="sc">{</span>selected_dog<span class="sc">}</span><span class="ss"> for </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">.'</span>)</span>
+<span id="cb9-262"><a href="#cb9-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-263"><a href="#cb9-263" aria-hidden="true" tabindex="-1"></a>        confirm_choice <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter Yes to confirm and No to cancel: "</span>).lower()</span>
+<span id="cb9-264"><a href="#cb9-264" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> confirm_choice <span class="op">==</span> <span class="st">"yes"</span>:</span>
+<span id="cb9-265"><a href="#cb9-265" aria-hidden="true" tabindex="-1"></a>            dog_database[selected_dog][<span class="st">'status'</span>] <span class="op">=</span> <span class="st">'unavailable'</span></span>
+<span id="cb9-266"><a href="#cb9-266" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>selected_dog<span class="sc">}</span><span class="ss"> has been booked for </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss">.'</span>)</span>
+<span id="cb9-267"><a href="#cb9-267" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>avail_dog_database[new_num_service_dog]<span class="sc">}</span><span class="ss"> status has now been updated to </span><span class="sc">{</span>dog_database[avail_dog_database[new_num_service_dog]][<span class="st">'status'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-268"><a href="#cb9-268" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb9-269"><a href="#cb9-269" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f'Your booking of </span><span class="sc">{</span>selected_dog<span class="sc">}</span><span class="ss"> for </span><span class="sc">{</span>options_list[new_num_stuff_selec]<span class="sc">}</span><span class="ss"> was not complete.'</span>)</span>
+<span id="cb9-270"><a href="#cb9-270" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb9-271"><a href="#cb9-271" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You have entered </span><span class="sc">{</span>num_service_dog<span class="sc">}</span><span class="ss">, which is not on the list.'</span>)</span>
+<span id="cb9-272"><a href="#cb9-272" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-273"><a href="#cb9-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-274"><a href="#cb9-274" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Programming Concepts Demonstrated</span></span>
+<span id="cb9-275"><a href="#cb9-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-276"><a href="#cb9-276" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Structures</span></span>
+<span id="cb9-277"><a href="#cb9-277" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Lists**: Used for storing usernames, passwords, and search results</span>
+<span id="cb9-278"><a href="#cb9-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Dictionaries**: Nested dictionaries for user details and dog database</span>
+<span id="cb9-279"><a href="#cb9-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**List/Dictionary Manipulation**: Adding, accessing, and modifying data</span>
+<span id="cb9-280"><a href="#cb9-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-281"><a href="#cb9-281" aria-hidden="true" tabindex="-1"></a><span class="fu">### Control Flow</span></span>
+<span id="cb9-282"><a href="#cb9-282" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**For Loops**: Iterating through lists and dictionaries</span>
+<span id="cb9-283"><a href="#cb9-283" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Conditional Statements**: If/else logic for authentication and validation</span>
+<span id="cb9-284"><a href="#cb9-284" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Break Statements**: Controlling loop execution</span>
+<span id="cb9-285"><a href="#cb9-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-286"><a href="#cb9-286" aria-hidden="true" tabindex="-1"></a><span class="fu">### Functions and Methods</span></span>
+<span id="cb9-287"><a href="#cb9-287" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**String Methods**: <span class="in">`.lower()`</span>, <span class="in">`.startswith()`</span></span>
+<span id="cb9-288"><a href="#cb9-288" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Built-in Functions**: <span class="in">`enumerate()`</span>, <span class="in">`input()`</span>, <span class="in">`print()`</span>, <span class="in">`int()`</span></span>
+<span id="cb9-289"><a href="#cb9-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Operators**: <span class="in">`in`</span> operator for membership testing</span>
+<span id="cb9-290"><a href="#cb9-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-291"><a href="#cb9-291" aria-hidden="true" tabindex="-1"></a><span class="fu">### User Interaction</span></span>
+<span id="cb9-292"><a href="#cb9-292" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input Validation**: Checking if selections are within valid ranges</span>
+<span id="cb9-293"><a href="#cb9-293" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Confirmation Workflows**: Two-step process for critical actions</span>
+<span id="cb9-294"><a href="#cb9-294" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Status Updates**: Real-time updates to database status fields</span>
+<span id="cb9-295"><a href="#cb9-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-296"><a href="#cb9-296" aria-hidden="true" tabindex="-1"></a><span class="fu">## Technical Skills Showcased</span></span>
+<span id="cb9-297"><a href="#cb9-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-298"><a href="#cb9-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python fundamentals (loops, conditionals, functions)</span>
+<span id="cb9-299"><a href="#cb9-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data structure implementation (lists, dictionaries)</span>
+<span id="cb9-300"><a href="#cb9-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>User authentication systems</span>
+<span id="cb9-301"><a href="#cb9-301" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Search algorithms</span>
+<span id="cb9-302"><a href="#cb9-302" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>State management</span>
+<span id="cb9-303"><a href="#cb9-303" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Input validation and error handling</span>
+<span id="cb9-304"><a href="#cb9-304" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dynamic data updates</span>
+<span id="cb9-305"><a href="#cb9-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-306"><a href="#cb9-306" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">← All projects</span><span class="co">](../work.qmd)</span>{.btn-pill .s}</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Nkem Okweye · Built with <a href="https://quarto.org">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nkemdibe-okweye-639059200/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nko123">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

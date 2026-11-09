@@ -1,26 +1,54 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - assets/
 
 website:
-  title: "Nkem Okweye | Portfolio"
+  title: "Nkem Okweye"
+  description: "Data scientist at Georgetown University School of Medicine and MS Data Science & Analytics candidate. Python, R, SQL and Power BI."
+  site-url: https://nko123.github.io/portfolio
+  image: assets/img/profile.jpg
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
+  page-navigation: false
   navbar:
-    background: primary
-    left:
-      - href: index.qmd
-        text: Home
+    title: "Nkem Okweye"
+    left: []
+    right:
+      - href: index.qmd#experience
+        text: Experience
+      - href: work.qmd
+        text: Work
       - href: about.qmd
         text: About
-      - href: skills.qmd
-        text: Skills
       - href: resume.qmd
-        text: Resume
-      - href: projects.qmd
-        text: Projects
+        text: Résumé
+      - text: Get in touch
+        href: index.qmd#contact
+  page-footer:
+    left: "© 2026 Nkem Okweye · Built with [Quarto](https://quarto.org)"
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/nkemdibe-okweye-639059200/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/nko123
+        aria-label: GitHub
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [cosmo, assets/theme-light.scss]
+      dark: [cosmo, assets/theme-dark.scss]
     css: styles.css
-    toc: true
+    toc: false
     page-layout: article
+    smooth-scroll: true
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">

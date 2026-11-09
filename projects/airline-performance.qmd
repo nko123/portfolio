@@ -1,0 +1,53 @@
+---
+title: "A deep dive into U.S. airline performance"
+subtitle: "Delays, cancellations and weekly rhythms in 600,000+ flights."
+description: "A dimensional model over 600,000+ DOT flight records, queried in PostgreSQL and charted in R."
+date: 2025-11-01
+image: ../assets/img/airline.jpg
+categories: [SQL, PostgreSQL, R]
+course: "DSAN 6300 · Georgetown"
+cat_label: "SQL · PostgreSQL"
+stat: "2,620 min"
+stat_text: "longest delay found"
+---
+
+```{=html}
+<div class="cs-facts">
+  <div><span>Course</span>DSAN 6300, Database Systems</div>
+  <div><span>Data</span>600,000+ DOT flight records</div>
+  <div><span>Model</span>Fact and dimension tables</div>
+  <div><span>Tools</span>PostgreSQL, R, AWS, Quarto</div>
+</div>
+<img class="cs-cover" src="../assets/img/airline.jpg" alt="Commercial airplane in flight">
+```
+
+## The question
+
+Where and when do U.S. flights go wrong? I wanted to find the worst delays, the cancellation patterns and the busiest periods across airlines and airports.
+
+## Method
+
+```{=html}
+<div class="methods"><span>star schema</span><span>PostgreSQL</span><span>window functions</span><span>tidyverse</span><span>ggplot2</span><span>kableExtra</span></div>
+```
+
+I designed a dimensional model for U.S. Department of Transportation flight records, wrote SQL to surface anomalies, and charted the results in R.
+
+## Results
+
+```{=html}
+<div class="results">
+  <div class="res"><b>2,620</b><span>minutes, the longest single delay</span><i>SQL anomaly query</i></div>
+  <div class="res"><b>14,488</b><span>cancelled flights analyzed</span><i>cancellation patterns</i></div>
+  <div class="res"><b>106,575</b><span>flights on the busiest day</span><i>daily volume</i></div>
+</div>
+```
+
+Flight volume follows a clear weekday and weekend pattern driven by business travel.
+
+```{=html}
+<div class="btns" style="margin-top:2rem">
+  <a class="btn-pill p" href="https://no252-gu.github.io/DSAN_6300_MINI_PROJECT/">See the project ↗</a>
+  <a class="btn-pill s" href="../work.html">← All projects</a>
+</div>
+```

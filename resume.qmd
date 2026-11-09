@@ -1,163 +1,88 @@
 ---
-title: "Resume"
+title: "Résumé"
+subtitle: "Nkemdibe (Nkem) Okweye · Washington, DC · [Email](mailto:nkemokweye@gmail.com) · [LinkedIn](https://www.linkedin.com/in/nkemdibe-okweye-639059200/) · [GitHub](https://github.com/nko123)"
+toc: true
+toc-title: "On this page"
 ---
 
-## Contact Information
+[Download PDF ↓](assets/files/Nkemdibe_Okweye_Resume.pdf){.btn-pill .s download=""}
 
-**NKEMDIBE OKWEYE**
+## Experience
 
-[LinkedIn](https://www.linkedin.com/in/nkemdibe-okweye-639059200/) | [GitHub](https://github.com/nko123)
+::: {.resume-item}
+### Work-Study Data Scientist
+**Georgetown University School of Medicine** · Washington, DC · July 2026 – Present
+
+- Modeled 6 years of residency readiness survey data as a star schema (fact and dimension tables across 17 competencies), powering a multi-page dashboard comparing Georgetown against national results
+- Built a Python pipeline that ingests national and school-level survey data into one dataset, replacing manual Excel cleanup
+- Built a Net Readiness Score to benchmark Georgetown against national results across 17 competencies, weighting by respondent count so small specialties don't distort Georgetown vs. national comparisons
+- Automated a manual process for combining clinical exam score reports across 6 clerkships into one historical dataset going back to 2016, with built-in quality checks to keep records accurate
+- Communicated findings to non-technical stakeholders through dashboards, slide decks, and written summaries
+:::
+
+::: {.resume-item}
+### Analytics & Data Intern
+**AL-Monitor** · Washington, DC · April 2026 – August 2026
+
+- Built Python pipelines pulling subscription data (subscriber counts, MRR, churn) from the Chargebee API to automate the monthly KPI report, eliminating about 3 hours of manual downloading, reformatting, and charting per report
+- Automated the Waterfall report, an overview of subscription health across individual, group, and omnichannel plans
+- Ingested newsletter campaign performance data from the Campaign Monitor API into a clean dataset for marketing reporting
+- Partnered with 3 senior editors to scope their reporting needs and built a Looker Studio report that brings article and campaign performance data into one place, supporting data-driven content decisions
+- Maintained daily and monthly Looker Studio dashboards and delivered data pulls and ad hoc analysis on subscriber, newsletter, and article performance for editorial, marketing, and leadership teams
+:::
+
+::: {.resume-item}
+### Data Analyst
+**Department of National Defence** · Ottawa, Ontario · September 2023 – August 2025
+
+- Wrote SQL to transform 500K+ records from SAP ERP, SQL warehouses, Lakehouse, and CRM sources for Power BI
+- Created and maintained Power BI dashboards and Excel-based reporting tools used by 200+ stakeholders
+- Built PowerPoint briefings on KPIs and performance insights, presenting findings to all levels of the organization
+- Worked with data engineers and SMEs to turn business requirements into pipeline specs and data models feeding Power BI
+- Cleaned and validated large operational datasets (duplicates, missing values, inconsistencies) and documented business rules
+- Built an intake portal with Power Automate and Azure DevOps that reduced manual data entry by 80%
+:::
 
 ## Education
 
 ::: {.resume-item}
 ### Master of Science in Data Science and Analytics
-**Georgetown University** | Washington, DC | 2025 – 2027
+**Georgetown University** · Washington, DC · August 2025 – May 2027
 
-**Relevant Coursework:** Machine Learning, Statistical Methods, A/B Testing & Experimental Design, Probability & Statistics, Advanced Data Visualization, Database Systems, Python Programming
+Relevant coursework: Database Systems, Machine Learning, Data Visualization, Probability & Statistics, NLP
 :::
 
 ::: {.resume-item}
-### Honours Bachelor of Commerce (Business Technology Management)
-**University of Ottawa** | Ottawa, Ontario | 2020 – 2025
+### Honours Bachelor of Commerce, Business Technology Management
+**University of Ottawa** · Ottawa, Ontario · September 2020 – December 2024
 :::
 
 ## Skills
 
-**Programming & Data Analysis**
+**Data modeling & SQL:** SQL data modeling (joins, aggregations, data validation), PostgreSQL, dimensional modeling (star schema, fact and dimension tables), data documentation
 
-Python (Pandas, NumPy, Scikit-learn, PyTorch, NLTK, Matplotlib, Seaborn), SQL, R (tidyverse, ggplot2)
+**BI & reporting:** Looker Studio, Power BI (DAX, Power Query), Tableau, Google Analytics, Excel and Google Sheets (pivot tables, XLOOKUP), KPI reporting, dashboard design
 
-**Machine Learning**
+**Programming & pipelines:** Python (pandas, NumPy, Jupyter), REST APIs (Chargebee, Campaign Monitor, Microsoft Graph), ETL pipelines, workflow automation, R, Git/GitHub
 
-Supervised Learning (Regression, Classification, Logistic Regression, Naive Bayes, KNN), Unsupervised Learning (K-Means, DBSCAN, PCA, t-SNE), Model Evaluation (ROC/AUC, Confusion Matrix, Feature Selection), NLP (Sentiment Analysis, TF-IDF, Topic Modeling)
+**Marketing & business data:** Marketing analytics, subscription metrics (MRR, churn, subscriber growth), newsletter campaign performance, audience engagement
 
-**Experimentation & Statistics**
-
-A/B Testing, Experimental Design, Statistical Analysis, Bayesian Inference, Hypothesis Testing, Dimensionality Reduction
-
-**Data Engineering & Tools**
-
-ETL Pipelines, Large-Scale Data Processing, APIs, Git/GitHub, Jupyter Notebooks, AWS, Power BI, Excel, Data Structures & Algorithms
-
-## Professional Experience
-
-::: {.resume-item}
-### Data Analyst
-**Department of National Defence** | Ottawa, Ontario | September 2023 – August 2024
-
-- Collaborated with data engineers and product stakeholders to optimize enterprise datasets for accuracy and scalability, supporting product decisions and departmental reporting for 200+ users
-- Designed and automated Power BI dashboards integrating data from SAP, Excel, Lakehouse, and SharePoint—reducing report generation time by 40% and improving stakeholder decision-making
-- Used SQL in Microsoft Fabric to extract, transform, and load data across Lakehouse environments for real-time reporting
-- Partnered with internal clients to identify reporting pain points and translate user needs into intuitive data products, achieving 95% positive feedback on delivered prototypes
-- Built low-code Power Apps solutions to streamline intake and tracking processes, cutting manual work by 25% and improving workflow visibility
-:::
-
-::: {.resume-item}
-### Student Analyst
-**Global Affairs Canada** | Ottawa, Ontario | May 2023 – August 2023
-
-- Supported internal performance reporting and outreach analytics for international initiatives, validating 3 key policy indicators for management reporting
-- Conducted competitive and policy gap analyses, aligning insights to organizational objectives and stakeholder needs
-- Collaborated cross-functionally with policy and technical teams to define metrics and translate qualitative data into actionable analytics
-:::
+**Methods & practices:** Data quality validation, root-cause analysis, requirements gathering, cross-functional collaboration
 
 ## Projects
 
 ::: {.resume-item}
-![](voterturnout_main.png){.project-image}
+### [U.S. Airline Performance Analysis](projects/airline-performance.qmd)
+**Georgetown University · DSAN 6300 (Database Systems)**
 
-### Socioeconomic and Structural Determinants for Voter Turnout in U.S. Elections
-**Georgetown University - DSAN 5100**
-
-- Conducted comprehensive statistical analysis of 23 elections (1980-2024) across 6 states, processing voter turnout data from 138 election observations to identify socioeconomic predictors of political participation
-- Applied advanced statistical methodologies including one-way ANOVA, Welch's ANOVA, chi-square tests, permutation tests, and bootstrap resampling to test relationships between voter turnout and macroeconomic indicators
-- Developed ARIMA time series models forecasting 2026 unemployment rates for three representative states, achieving statistically significant predictions with 95% confidence intervals
-- Integrated data from 5 federal sources (FRED API, FBI Crime Data Explorer, NOAA API, U.S. Census Bureau, UFL Election Lab) using Python and R for comprehensive multi-dimensional analysis
-- Discovered statistically significant relationships: swing states showed 5.47% higher turnout than blue states (p=0.0012), high housing price index states demonstrated ~5% higher presidential turnout (p=0.0007), and medium-crime elections exhibited 4.35 percentage point higher turnout than high-crime elections (p=0.004)
-- Performed rigorous assumption testing (Shapiro-Wilk, Levene's test) and post-hoc analysis (Bonferroni, Games-Howell procedures) to ensure statistical validity across 12+ hypothesis tests
+- Designed a dimensional model (fact and dimension tables) in PostgreSQL and used SQL to analyze 600,000+ flight records
+- Documented data sources, query logic, and methodology, and built an interactive dashboard for a non-technical audience
 :::
 
 ::: {.resume-item}
-![](menendez_brothers_cover.png){.project-image}
+### [Menendez Brothers Media Narrative Analysis](projects/menendez-narratives.qmd)
+**Georgetown University · DSAN 5000**
 
-### Menendez Brothers Media Narrative Analysis
-**Georgetown University - DSAN 5000**
-
-- Engineered large-scale data pipeline processing 2,840+ documents from multiple APIs (Guardian API, YouTube Data API v3) and historical archives using robust ETL workflows
-- Developed and evaluated machine learning models (Multinomial Naive Bayes, Logistic Regression) achieving 96.8% test accuracy through hyperparameter tuning and feature selection
-- Designed experiments using unsupervised learning (K-Means, PCA, t-SNE) to reduce 2,000+ TF-IDF features into three interpretable narrative clusters
-- Applied statistical analysis and sentiment modeling to quantify temporal trends, identifying 0.4-point sentiment divergence between traditional journalism and social media
-- Presented findings through interactive visualizations including ROC curves, confusion matrices, and t-SNE embeddings
+- Built ETL pipelines integrating Guardian, YouTube Data, Google Trends APIs and OCR text, processing 8,300+ raw files
+- Designed data schemas and model-ready tables for repeatable analysis of sentiment and audience behavior trends
 :::
-
-::: {.resume-item}
-![](airplane_photo.jpg){.project-image}
-
-### U.S. Airline Performance Analysis
-**Georgetown University - DSAN 6300**
-
-- Designed and implemented dimensional data model (fact/dimension tables) for 600,000+ flight records from U.S. Department of Transportation, analyzing operational patterns across airlines and airports using PostgreSQL
-- Developed complex SQL queries to identify performance anomalies including maximum delays (2,620 minutes), cancellation patterns (14,488 flights), and busiest operational periods (106,575 daily flights)
-- Conducted statistical analysis and created data visualizations in R (tidyverse, ggplot2, kableExtra) to uncover temporal patterns in flight operations, revealing clear weekday/weekend patterns driven by business travel
-
-[View Project →](https://no252-gu.github.io/DSAN_6300_MINI_PROJECT/)
-:::
-
-::: {.resume-item}
-### Request Automation Portal
-**Department of National Defence**
-
-Designed an automated Azure DevOps workflow integrated with Microsoft Forms and Teams to track 100+ monthly requests; reduced manual entry by 80% and task delays by 50%.
-:::
-
-::: {.resume-item}
-### Movie Review Web Application (Binge)
-**University of Ottawa - ADM 4379**
-
-- Built responsive SQL-backed movie review application managing 20,000+ records with optimized database queries
-- Improved feature response time by 30% through query optimization and data structure improvements
-- Designed user-centric interface using HTML, CSS, and PHP to enhance user experience and engagement
-
-[View Project →](https://nko123.github.io/index.html)
-:::
-
-::: {.resume-item}
-### Interactive Dog Adoption Application
-**University of Ottawa - ADM 4311**
-
-- Built a Jupyter Notebook–based Python application for dog adoption and service options, executed through interactive notebook cells
-- Applied core Python concepts (loops, functions, conditionals, and data structures) to build search and selection features
-- Developed a simple authentication system using dictionary-based text mapping to validate usernames and passwords
-:::
-
-::: {.resume-item}
-### Data Mining Project
-**University of Ottawa - ADM 3308**
-
-Identified key customer sentiment clusters from 5,456 Google reviews using K-Means analysis to uncover travel preference insights and inform content personalization strategies.
-:::
-
-## Technical Skills
-
-**Programming & Development**
-
-Python (Pandas, NumPy, Scikit-learn, PyTorch, NLTK), R (tidyverse, ggplot), SQL, HTML, CSS, JavaScript, Git/GitHub, OOP
-
-**Cloud & Infrastructure**
-
-AWS, Azure DevOps, Microsoft Fabric, CLI
-
-**Business Intelligence & Automation**
-
-Power BI, Power Apps, Power Automate, Dataflow Gen2, Excel, SAP
-
-**Analytics & Data Science**
-
-ETL, Statistical Analysis, Data Mining, Data Engineering, Data Visualization, A/B Testing, Bayesian Inference, Supervised & Unsupervised Learning (regression, classification, t-SNE, PCA, DBSCAN, K-Means), Experimental Design, NLP, Big Data
-
-**Marketing & Digital**
-
-A/B Testing, Digital Marketing, Social Media Analytics, SEO/SEM, Web Design
-
-[← Back to Home](index.qmd){.btn .btn-secondary} [View Skills →](skills.qmd){.btn .btn-primary}
