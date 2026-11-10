@@ -42,7 +42,7 @@ format:
     theme:
       light: [cosmo, assets/theme-light.scss]
       dark: [cosmo, assets/theme-dark.scss]
-    css: styles.css
+    css: studio.css
     toc: false
     page-layout: article
     smooth-scroll: true
