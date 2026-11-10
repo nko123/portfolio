@@ -1,0 +1,19 @@
+```{=html}
+<div class="work-grid list">
+<% for (const item of items) { %>
+<a class="wcard" href="<%- item.path %>" <%= metadataAttrs(item) %>>
+<div class="pimg">
+<% if (item.image) { %><img src="<%- item.image %>" alt="" loading="lazy"><% } else { %><div class="noimg"><%= item.title.charAt(0) %></div><% } %>
+<span class="cat"><%= item.cat_label %></span>
+</div>
+<div class="pbody">
+<div class="meta"><%= item.course %></div>
+<h3><%= item.title %></h3>
+<p><%= item.description %></p>
+<% if (item.stat) { %><div class="find"><b><%= item.stat %></b> <%= item.stat_text %></div><% } %>
+<span class="go">Case study →</span>
+</div>
+</a>
+<% } %>
+</div>
+```

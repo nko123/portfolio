@@ -1,0 +1,39 @@
+---
+title: "Request intake portal"
+subtitle: "Department of National Defence"
+description: "Microsoft Forms, Power Automate and Azure DevOps wired together to standardize request intake and tracking."
+date: 2024-08-01
+categories: [BI & automation, Power Automate]
+course: "Department of National Defence"
+cat_label: "BI & automation"
+stat: "80%"
+stat_text: "less manual data entry"
+---
+
+```{=html}
+<div class="cs-facts">
+  <div><span>Where</span>Department of National Defence</div>
+  <div><span>Role</span>Data Analyst</div>
+  <div><span>Volume</span>100+ requests a month</div>
+  <div><span>Tools</span>Forms, Power Automate, Azure DevOps, Teams</div>
+</div>
+```
+
+## The problem
+
+Requests arrived through email and chat in different formats, so each one had to be retyped into a tracker by hand. Status was hard to see and tasks slipped.
+
+## What I built
+
+A structured intake form in Microsoft Forms feeds Power Automate flows that create and route Azure DevOps work items and post updates to Teams. Every request gets the same fields, an owner and a visible status.
+
+## Results
+
+```{=html}
+<div class="results">
+  <div class="res"><b>80%</b><span>less manual data entry</span><i>intake automation</i></div>
+  <div class="res"><b>50%</b><span>fewer task delays</span><i>routing + visibility</i></div>
+  <div class="res"><b>100+</b><span>requests tracked each month</span><i>Azure DevOps</i></div>
+</div>
+<div class="btns" style="margin-top:2rem"><a class="btn-pill s" href="../work.html">← All projects</a></div>
+```

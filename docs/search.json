@@ -1,254 +1,331 @@
 [
   {
-    "objectID": "dog_adoption.html",
-    "href": "dog_adoption.html",
-    "title": "Interactive Dog Adoption Application",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Business training, data science tools.",
+    "section": "",
+    "text": "About\n    Business training, data science tools.\n    I started out as an accounting major at the University of Ottawa, quickly realized it wasn’t for me, and switched to business technology management. Then I spent two years at the Department of National Defence turning SAP and CRM data into dashboards and automations people actually used.\n    That work showed me how much a good question and clean data matter. I came to Georgetown for the statistics and machine learning, and now I build data pipelines and dashboards for the School of Medicine. In between, I automated subscription and newsletter reporting at AL-Monitor.\n    I like problems where the hard part is getting the data right: reconciling sources that don’t agree, catching the records a report silently drops, and turning the result into something a busy person can read in a minute.\n    Outside of data, I love horse riding. Every new place I visit, I try to find a ranch and take the horses out for a ride.\n    \n      Analysis & MLRegression, classification, clustering (K-Means, DBSCAN), PCA, t-SNE, NLP (TF-IDF, sentiment, topic modeling), A/B testing, Bayesian inference, ARIMA\n      Languages & dataPython (pandas, NumPy, scikit-learn, PyTorch, NLTK), R (tidyverse, ggplot2), SQL, PostgreSQL, REST APIs, ETL pipelines, D3.js\n      BI & platformsPower BI (DAX, star schemas), Looker Studio, Power Apps, Power Automate, Microsoft Fabric, Azure DevOps, AWS, Git\n    \n    \n      See my work\n      Résumé\n      Download PDF ↓"
+  },
+  {
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Work",
+    "section": "",
+    "text": "Data viz · D3\n\n\nDSAN 5200 · Georgetown\nThe Vanishing Entry Point\nWhy the job market got harder for new grads. Five public datasets in an interactive story with Chart.js and a D3 explorer of 74 majors.\n46% fewer hires than postings implied\nCase study →\n\n\n\n\n\n\nStatistics · R\n\n\nDSAN 5100 · Georgetown\nWhat actually drives Americans to vote?\n23 elections in six states, tested against unemployment, housing prices, crime and Election Day weather.\n+5.47 pts swing vs. blue states, p = 0.0012\nCase study →\n\n\n\n\n\n\nNLP · Python\n\n\nDSAN 5000 · Georgetown\nThe Menendez Brothers, from courtroom to comments section\n2,840 news articles, archives and YouTube comments tracing 35 years of shifting public narrative.\n96.8% test accuracy, Naive Bayes classifier\nCase study →\n\n\n\n\n\n\nSQL · PostgreSQL\n\n\nDSAN 6300 · Georgetown\nA deep dive into U.S. airline performance\nA dimensional model over 600,000+ DOT flight records, queried in PostgreSQL and charted in R.\n2,620 min longest delay found\nCase study →\n\n\n\n\n\nR\nBI & automation\n\n\nDepartment of National Defence\nRequest intake portal\nMicrosoft Forms, Power Automate and Azure DevOps wired together to standardize request intake and tracking.\n80% less manual data entry\nCase study →\n\n\n\n\n\nB\nWeb · SQL\n\n\nuOttawa · ADM 4379\nBinge: a movie review web app\nA responsive SQL-backed movie review app over 20,000+ records, built with HTML, CSS and PHP.\n30% faster feature response after query tuning\nCase study →\n\n\n\n\n\nC\nData mining\n\n\nuOttawa · ADM 3308\nClustering 5,456 travel reviews\nK-Means on 5,456 Google reviews to find customer sentiment segments for content personalization.\n5,456 Google reviews clustered\nCase study →\n\n\n\n\n\nW\nPython\n\n\nuOttawa · ADM 4311\nWoof Woof: a dog adoption app\nA Jupyter-based Python app with login, service search and an adoption workflow, built from core data structures.\nPython lists, dictionaries and control flow\nCase study →\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/review-clustering.html",
+    "href": "projects/review-clustering.html",
+    "title": "Clustering 5,456 travel reviews",
+    "section": "",
+    "text": "CourseADM 3308, University of Ottawa\n  Data5,456 Google reviews\n  MethodK-Means clustering\n  ToolOrange Data Mining"
+  },
+  {
+    "objectID": "projects/review-clustering.html#the-question",
+    "href": "projects/review-clustering.html#the-question",
+    "title": "Clustering 5,456 travel reviews",
+    "section": "The question",
+    "text": "The question\nWhat do travellers actually care about, and can reviews be grouped into segments a travel company could personalize content for?"
+  },
+  {
+    "objectID": "projects/review-clustering.html#method",
+    "href": "projects/review-clustering.html#method",
+    "title": "Clustering 5,456 travel reviews",
+    "section": "Method",
+    "text": "Method\nI cleaned and vectorized the reviews, then used K-Means to group them into sentiment clusters and profiled each cluster’s ratings and themes."
+  },
+  {
+    "objectID": "projects/review-clustering.html#results",
+    "href": "projects/review-clustering.html#results",
+    "title": "Clustering 5,456 travel reviews",
+    "section": "Results",
+    "text": "Results\nThe clusters separated distinct preference segments and the factors driving satisfaction in each, which led to recommendations for targeting and content strategy.\n← All projects"
+  },
+  {
+    "objectID": "projects/airline-performance.html",
+    "href": "projects/airline-performance.html",
+    "title": "A deep dive into U.S. airline performance",
+    "section": "",
+    "text": "CourseDSAN 6300, Database Systems\n  Data600,000+ DOT flight records\n  ModelFact and dimension tables\n  ToolsPostgreSQL, R, AWS, Quarto"
+  },
+  {
+    "objectID": "projects/airline-performance.html#the-question",
+    "href": "projects/airline-performance.html#the-question",
+    "title": "A deep dive into U.S. airline performance",
+    "section": "The question",
+    "text": "The question\nWhere and when do U.S. flights go wrong? I wanted to find the worst delays, the cancellation patterns and the busiest periods across airlines and airports."
+  },
+  {
+    "objectID": "projects/airline-performance.html#method",
+    "href": "projects/airline-performance.html#method",
+    "title": "A deep dive into U.S. airline performance",
+    "section": "Method",
+    "text": "Method\nstar schemaPostgreSQLwindow functionstidyverseggplot2kableExtra\nI designed a dimensional model for U.S. Department of Transportation flight records, wrote SQL to surface anomalies, and charted the results in R."
+  },
+  {
+    "objectID": "projects/airline-performance.html#results",
+    "href": "projects/airline-performance.html#results",
+    "title": "A deep dive into U.S. airline performance",
+    "section": "Results",
+    "text": "Results\n\n  2,620minutes, the longest single delaySQL anomaly query\n  14,488cancelled flights analyzedcancellation patterns\n  106,575flights on the busiest daydaily volume\n\nFlight volume follows a clear weekday and weekend pattern driven by business travel.\n\n  See the project ↗\n  ← All projects"
+  },
+  {
+    "objectID": "projects/dog-adoption.html",
+    "href": "projects/dog-adoption.html",
+    "title": "Woof Woof: a dog adoption app",
     "section": "",
     "text": "This interactive Python application, built in Jupyter Notebook, demonstrates fundamental programming concepts through a practical dog adoption and services platform. The application features user authentication, search functionality, and a dynamic booking system for various dog-related services."
   },
   {
-    "objectID": "dog_adoption.html#project-overview",
-    "href": "dog_adoption.html#project-overview",
-    "title": "Interactive Dog Adoption Application",
+    "objectID": "projects/dog-adoption.html#project-overview",
+    "href": "projects/dog-adoption.html#project-overview",
+    "title": "Woof Woof: a dog adoption app",
     "section": "",
     "text": "This interactive Python application, built in Jupyter Notebook, demonstrates fundamental programming concepts through a practical dog adoption and services platform. The application features user authentication, search functionality, and a dynamic booking system for various dog-related services."
   },
   {
-    "objectID": "dog_adoption.html#part-1-basic-authentication-and-search",
-    "href": "dog_adoption.html#part-1-basic-authentication-and-search",
-    "title": "Interactive Dog Adoption Application",
+    "objectID": "projects/dog-adoption.html#part-1-basic-authentication-and-search",
+    "href": "projects/dog-adoption.html#part-1-basic-authentication-and-search",
+    "title": "Woof Woof: a dog adoption app",
     "section": "Part 1: Basic Authentication and Search",
     "text": "Part 1: Basic Authentication and Search\n\nUser Login System\nThe first iteration implements a basic login system using lists to store usernames and passwords.\n\n# Login function\nuser_name = ['vbrad','nokwe','dadel','hjami']\nuser_password = ['brad123','okwe123','johnhancock1977','jami1234']\n\nlogin_username = input(\"Enter your username (Note: Case Sensitive): \")\nlogin_password = input(\"Enter your password (Note: Case Sensitive): \")\n\n# For loop to login\nfor n in user_name and user_password:\n  if login_username in user_name and login_password in user_password:\n    print(\"Login Successful\")\n    break\n  else:\n    print(\"Username or Password is wrong, Try again\")\n    break\n\n\n\nService Search Functionality\nUsers can search for available services using partial matching with the startswith() method and in operator.\n\nstuff = [\"Adopt a Dog\", \"Foster a Dog \", \"Donate a Dog\", \"Dog Therapy\",\n         \"Dog Yoga \", \"Dog Training\", \"Dog Grooming\",\"Dog Recipes\"]\n\nprint(\"Welcome to Woof Woof, a one stop for all things dogs!\")\n\nsearch_function = input(\"What Service are you looking for today: \")\nsearch_function = search_function.lower()\n\noptions_list = []\n\n# Using a for loop to search for a partial match in the list\nfor s in stuff:\n  s = s.lower()\n  m = s.startswith((search_function))\n  if m == True or search_function in s:\n    options_list.append(s)\n\n\n\nDisplaying Search Results\n\n# Check if anything was found\nif options_list == []:\n  print(f\"No results found with search\")\nelse:\n    print(f\"Here are results that match your search:\")\n    for index, op in enumerate(options_list):\n        new_index = index + 1\n        print(f\"{new_index}. {op}\")\n\n    num_stuff_selec = int(input(\"Select an option from the list: \"))\n    new_num_stuff_selec = int(num_stuff_selec) - 1\n\n    if new_num_stuff_selec &gt;= 0 and new_num_stuff_selec &lt; len(options_list):\n        print(f'You have chosen {num_stuff_selec} and want to view {options_list[new_num_stuff_selec]}')\n    else:\n        print(f'You have entered {num_stuff_selec}, which is not on the list.')"
   },
   {
-    "objectID": "dog_adoption.html#part-2-enhanced-application-with-dictionary-based-data-structures",
-    "href": "dog_adoption.html#part-2-enhanced-application-with-dictionary-based-data-structures",
-    "title": "Interactive Dog Adoption Application",
+    "objectID": "projects/dog-adoption.html#part-2-enhanced-application-with-dictionary-based-data-structures",
+    "href": "projects/dog-adoption.html#part-2-enhanced-application-with-dictionary-based-data-structures",
+    "title": "Woof Woof: a dog adoption app",
     "section": "Part 2: Enhanced Application with Dictionary-Based Data Structures",
     "text": "Part 2: Enhanced Application with Dictionary-Based Data Structures\n\nUser Authentication with Dictionaries\nThe enhanced version uses nested dictionaries for more robust user authentication, mapping usernames to user details.\n\nuser_details = {\n    'vbrad': {'firstname':'valerie', 'lastname': 'bradley', 'password': 'brad123'},\n    'nokwe': {'firstname':'nkemdibe', 'lastname': 'okweye', 'password': 'okwe123'},\n    'dadel': {'firstname':'daniel', 'lastname': 'adelberg', 'password': 'johnhancock1977'},\n    'hjami': {'firstname':'hisham', 'lastname': 'jamil', 'password': 'jami1234'}\n}\n\n\n\nDog Database Structure\nA comprehensive database tracks dog information including breed, gender, age, availability status, and attributes.\n\ndog_database = {\n    'luna': {'breed':'husky', 'gender':'female', 'age': '12 months',\n             'status': 'available','attribute': 'good with kids'},\n    'rex': {'breed':'german shepherd', 'gender':'male', 'age': '6 months',\n            'status': 'available','attribute': 'good around other dogs'},\n    'prince': {'breed':'doberman', 'gender':'male', 'age': '2 years',\n               'status': 'unavailable','attribute': 'friendly'},\n    'daisy': {'breed':'goldendoodle', 'gender':'male', 'age': '2 years',\n              'status': 'available','attribute': 'energetic'},\n    'koda': {'breed':'samoyed', 'gender':'female', 'age': '4 months',\n             'status': 'unavailable','attribute': 'playful'},\n    'mona': {'breed':'husky', 'gender':'female', 'age': '7 months',\n             'status': 'available','attribute': 'nice'},\n    'lola': {'breed':'dalmation', 'gender':'female', 'age': '2 months',\n             'status': 'available','attribute': 'protective'}\n}\n\n\n\nEnhanced Login and Service Selection\n\nstuff = [\"Adopt a Dog\", \"Foster a Dog \", \"Dog Therapy\", \"Dog Yoga \",\n         \"Dog Training\", \"Dog Grooming\"]\n\noptions_list, avail_dog_database = [], []\n\n# Check if the user's name matches their password\nlogin_user = input(\"Enter your username (Note: Case Sensitive): \")\nlogin_pass = input(\"Enter your password (Note: Case Sensitive): \")\n\nfor user in user_details:\n  if login_user in user_details and login_pass == user_details[login_user]['password']:\n    print(\"Login Successful\")\n\n    print(f\"Welcome {user_details[login_user]['firstname']} {user_details[login_user]['lastname']} to Woof Woof, a one-stop for all things dogs!\")\n    search_function = input(\"What Service are you looking for today: \")\n    search_function = search_function.lower()\n\n    # Search for matching services\n    for s in stuff:\n      s = s.lower()\n      m = s.startswith((search_function))\n      if m == True or search_function in s:\n        options_list.append(s)\n        continue\n\n    if options_list != []:\n      print(f\"Here are results that match your search:\")\n\n      for index, op in enumerate(options_list):\n        new_index = index + 1\n        print(f\"{new_index}. {op}\")\n\n      num_stuff_selec = int(input(\"Select an option from the list: \"))\n      new_num_stuff_selec = int(num_stuff_selec) - 1\n\n      # Check if the number entered is valid\n      if new_num_stuff_selec &gt;= 0 and new_num_stuff_selec &lt; len(options_list):\n        print(f'You have chosen {num_stuff_selec} and want to view {options_list[new_num_stuff_selec]}')\n\n        print(f'Here are the dogs available:')\n        for dog in dog_database:\n          if dog_database[dog]['status'] == 'available':\n            avail_dog_database.append(dog)\n      else:\n        print(f'You have entered {num_stuff_selec}, which is not on the list.')\n        break\n    else:\n      print(f\"No results found with search\")\n  else:\n    print(\"Username or Password is wrong, Try again\")\n  break\n\n\n\nDog Adoption Process\nThis section handles the complete adoption workflow, including selection, confirmation, and status updates.\n\nif avail_dog_database != [] and options_list[new_num_stuff_selec] == \"adopt a dog\":\n  for i, adog in enumerate(avail_dog_database):\n    new_i = i + 1\n    print(f\"{new_i}. {adog}, {dog_database[adog]['breed']}, {dog_database[adog]['gender']}, {dog_database[adog]['age']}, {dog_database[adog]['attribute']}\")\n\n  num_avail_dog = int(input(\"Select a dog from the list: \"))\n  new_num_avail_dog = int(num_avail_dog) - 1\n\n  if new_num_avail_dog &gt;= 0 and new_num_avail_dog &lt; len(avail_dog_database):\n    print(f'You have chosen {avail_dog_database[new_num_avail_dog]}')\n\n    adopt_choice = input(\"Enter Yes to confirm adoptions and No to cancel: \")\n    adopt_choice = adopt_choice.lower()\n\n    if adopt_choice == \"yes\":\n      dog_database[avail_dog_database[new_num_avail_dog]]['status']='unavailable'\n\n      print(f'Your adoption process of {avail_dog_database[new_num_avail_dog]} is complete')\n      print(f\"{avail_dog_database[new_num_avail_dog]} status has now been updated to {dog_database[avail_dog_database[new_num_avail_dog]]['status']}\")\n    else:\n      print(f'Your adoption process of {avail_dog_database[new_num_avail_dog]} was not complete')\n  else:\n    print(f'You have entered {num_avail_dog}, which is not on the list')\n\n\n\nOther Services Booking\nThis section manages bookings for services like therapy, yoga, training, and grooming.\n\nif avail_dog_database != [] and options_list[new_num_stuff_selec] != \"adopt a dog\":\n    for i, adog in enumerate(avail_dog_database):\n        print(f\"{i+1}. {adog}, {dog_database[adog]['breed']}, {dog_database[adog]['gender']}, {dog_database[adog]['age']}, {dog_database[adog]['attribute']}\")\n\n    num_service_dog = int(input(\"Select a dog from the list for the service: \"))\n    new_num_service_dog = num_service_dog - 1\n\n    if new_num_service_dog &gt;= 0 and new_num_service_dog &lt; len(avail_dog_database):\n        selected_dog = avail_dog_database[new_num_service_dog]\n        print(f'You have chosen {selected_dog} for {options_list[new_num_stuff_selec]}.')\n\n        confirm_choice = input(\"Enter Yes to confirm and No to cancel: \").lower()\n        if confirm_choice == \"yes\":\n            dog_database[selected_dog]['status'] = 'unavailable'\n            print(f'{selected_dog} has been booked for {options_list[new_num_stuff_selec]}.')\n            print(f\"{avail_dog_database[new_num_service_dog]} status has now been updated to {dog_database[avail_dog_database[new_num_service_dog]]['status']}\")\n        else:\n            print(f'Your booking of {selected_dog} for {options_list[new_num_stuff_selec]} was not complete.')\n    else:\n        print(f'You have entered {num_service_dog}, which is not on the list.')"
   },
   {
-    "objectID": "dog_adoption.html#key-programming-concepts-demonstrated",
-    "href": "dog_adoption.html#key-programming-concepts-demonstrated",
-    "title": "Interactive Dog Adoption Application",
+    "objectID": "projects/dog-adoption.html#key-programming-concepts-demonstrated",
+    "href": "projects/dog-adoption.html#key-programming-concepts-demonstrated",
+    "title": "Woof Woof: a dog adoption app",
     "section": "Key Programming Concepts Demonstrated",
     "text": "Key Programming Concepts Demonstrated\n\nData Structures\n\nLists: Used for storing usernames, passwords, and search results\nDictionaries: Nested dictionaries for user details and dog database\nList/Dictionary Manipulation: Adding, accessing, and modifying data\n\n\n\nControl Flow\n\nFor Loops: Iterating through lists and dictionaries\nConditional Statements: If/else logic for authentication and validation\nBreak Statements: Controlling loop execution\n\n\n\nFunctions and Methods\n\nString Methods: .lower(), .startswith()\nBuilt-in Functions: enumerate(), input(), print(), int()\nOperators: in operator for membership testing\n\n\n\nUser Interaction\n\nInput Validation: Checking if selections are within valid ranges\nConfirmation Workflows: Two-step process for critical actions\nStatus Updates: Real-time updates to database status fields"
   },
   {
-    "objectID": "dog_adoption.html#technical-skills-showcased",
-    "href": "dog_adoption.html#technical-skills-showcased",
-    "title": "Interactive Dog Adoption Application",
+    "objectID": "projects/dog-adoption.html#technical-skills-showcased",
+    "href": "projects/dog-adoption.html#technical-skills-showcased",
+    "title": "Woof Woof: a dog adoption app",
     "section": "Technical Skills Showcased",
-    "text": "Technical Skills Showcased\n\nPython fundamentals (loops, conditionals, functions)\nData structure implementation (lists, dictionaries)\nUser authentication systems\nSearch algorithms\nState management\nInput validation and error handling\nDynamic data updates\n\n← Back to Projects"
+    "text": "Technical Skills Showcased\n\nPython fundamentals (loops, conditionals, functions)\nData structure implementation (lists, dictionaries)\nUser authentication systems\nSearch algorithms\nState management\nInput validation and error handling\nDynamic data updates\n\n← All projects"
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
-    "section": "Background",
-    "text": "Background\nI’m a data professional with a passion for transforming complex data into actionable insights that drive business value. Currently pursuing my Master of Science in Data Science and Analytics at Georgetown University, I bring a unique blend of technical expertise and business acumen developed through my Honours Bachelor of Commerce in Business Technology Management from the University of Ottawa."
-  },
-  {
-    "objectID": "about.html#professional-journey",
-    "href": "about.html#professional-journey",
-    "title": "About Me",
-    "section": "Professional Journey",
-    "text": "Professional Journey\nMy career has been shaped by meaningful experiences in government analytics and data engineering:\nAt the Department of National Defence, I worked as a Data Analyst where I:\n\nSupported data-driven decision-making for 200+ users across the department\nReduced report generation time by 40% through automated Power BI dashboards\nAchieved 95% positive feedback on delivered data products\nCut manual workflow processes by 25% through innovative Power Apps solutions\n\nAt Global Affairs Canada, as a Student Analyst, I:\n\nContributed to international policy reporting and analytics\nConducted competitive analyses to support strategic initiatives\nCollaborated with cross-functional teams to define meaningful metrics"
-  },
-  {
-    "objectID": "about.html#what-drives-me",
-    "href": "about.html#what-drives-me",
-    "title": "About Me",
-    "section": "What Drives Me",
-    "text": "What Drives Me\nI’m passionate about:\n\nSolving Real Problems: Finding elegant technical solutions to complex business challenges\nData Storytelling: Translating complex analytics into clear, actionable insights\nContinuous Learning: Staying current with emerging technologies and methodologies\nCollaboration: Working with diverse teams to achieve shared goals"
-  },
-  {
-    "objectID": "about.html#technical-philosophy",
-    "href": "about.html#technical-philosophy",
-    "title": "About Me",
-    "section": "Technical Philosophy",
-    "text": "Technical Philosophy\nI believe in building scalable, maintainable solutions that prioritize user needs. Whether it’s designing an intuitive dashboard, automating a repetitive workflow, or uncovering insights from data, I focus on creating value that lasts."
-  },
-  {
-    "objectID": "about.html#education-growth",
-    "href": "about.html#education-growth",
-    "title": "About Me",
-    "section": "Education & Growth",
-    "text": "Education & Growth\nMy academic journey spans business technology and data science:\n\nCurrent: MS in Data Science & Analytics at Georgetown University (2025-2027)\n\nFocusing on advanced analytics, machine learning, and statistical methods\n\nCompleted: Honours BCom in Business Technology Management at University of Ottawa (2020-2025)\n\nBridged business strategy and technical implementation"
-  },
-  {
-    "objectID": "about.html#beyond-work",
-    "href": "about.html#beyond-work",
-    "title": "About Me",
-    "section": "Beyond Work",
-    "text": "Beyond Work\nWhen I’m not analyzing data or building applications, I enjoy exploring new technologies, contributing to open-source projects, and staying active in the data science community."
-  },
-  {
-    "objectID": "about.html#lets-connect",
-    "href": "about.html#lets-connect",
-    "title": "About Me",
-    "section": "Let’s Connect",
-    "text": "Let’s Connect\nI’m always interested in discussing data science, analytics, technology, and opportunities to collaborate on meaningful projects.\nView My Projects → See My Skills →"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "projects/voter-turnout.html",
+    "href": "projects/voter-turnout.html",
+    "title": "What actually drives Americans to vote?",
     "section": "",
-    "text": "Department of National Defence\n\n\nDesigned and implemented an automated workflow system to streamline request tracking and management across the department.\n\n\n\n\nAutomated tracking of 100+ monthly requests\nReduced manual data entry by 80%\nDecreased task delays by 50%\nImproved visibility and accountability across teams\n\n\n\n\n\nAzure DevOps\nMicrosoft Forms\nMicrosoft Teams\nPower Automate\n\n\n\n\nThe portal significantly improved operational efficiency by eliminating manual tracking processes and providing real-time visibility into request status, enabling better resource allocation and faster response times."
+    "text": "TeamPavlos Baffes, Noelle Martell, Younghoon Kim, Nkem Okweye, Nikhil Patla\n  CourseDSAN 5100, Probabilistic Modeling & Statistical Computing\n  Data23 elections · 6 states · 1980–2024\n  ToolsR, Python, Quarto"
   },
   {
-    "objectID": "projects.html#professional-projects",
-    "href": "projects.html#professional-projects",
-    "title": "Projects",
-    "section": "",
-    "text": "Department of National Defence\n\n\nDesigned and implemented an automated workflow system to streamline request tracking and management across the department.\n\n\n\n\nAutomated tracking of 100+ monthly requests\nReduced manual data entry by 80%\nDecreased task delays by 50%\nImproved visibility and accountability across teams\n\n\n\n\n\nAzure DevOps\nMicrosoft Forms\nMicrosoft Teams\nPower Automate\n\n\n\n\nThe portal significantly improved operational efficiency by eliminating manual tracking processes and providing real-time visibility into request status, enabling better resource allocation and faster response times."
+    "objectID": "projects/voter-turnout.html#the-question",
+    "href": "projects/voter-turnout.html#the-question",
+    "title": "What actually drives Americans to vote?",
+    "section": "The question",
+    "text": "The question\nTurnout swings a lot between states and elections. We asked whether the conditions people live with, such as unemployment, housing costs, crime and cost of living, predict participation better than civic duty alone."
   },
   {
-    "objectID": "projects.html#academic-personal-projects",
-    "href": "projects.html#academic-personal-projects",
-    "title": "Projects",
-    "section": "Academic & Personal Projects",
-    "text": "Academic & Personal Projects\n\n\n\nThe Menendez Brothers: From Courtrooms to Comments Sections\nGeorgetown University - DSAN 5000\n\nProject Subtitle\nThe Transformation of Menendez Media Narratives\n\n\nOverview\nOn August 20, 1989, Lyle and Erik Menendez shot and killed their parents in their Beverly Hills mansion. What followed was one of the most sensationalized criminal trials in American history. But the story didn’t end with their 1996 conviction—it evolved dramatically over 35 years, from tabloid sensation to Netflix phenomenon, from “cold-blooded killers” to potential victims of abuse deserving of freedom.\nThis data science project traces how public discourse around the Menendez brothers transformed across three decades and multiple media platforms, revealing fundamental shifts in how American society understands family violence, male victimization, and criminal justice.\n\n\nKey Features\n\nAnalysis of media narratives spanning 35 years (1989-2024)\nMulti-platform discourse analysis: traditional media, social media, and streaming content\nNatural language processing of public sentiment and narrative framing\nVisualization of evolving public perception over time\nExamination of societal shifts in understanding trauma and justice\n\n\n\nTechnologies Used\n\nPython\nNatural Language Processing (NLP)\nText Analysis & Sentiment Analysis\nData Visualization\nSocial Media Analytics\n\n\n\nResearch Questions\n\nHow has media framing of the Menendez case evolved from 1989 to 2024?\nWhat role did Netflix and social media play in reshaping public perception?\nHow do contemporary discussions reflect changing attitudes toward male victimization and family violence?\n\nView Project →\n\n\n\n\n\n\nSocioeconomic and Structural Determinants for Voter Turnout in the U.S. Elections\nGeorgetown University - DSAN 5100: Probabilistic Modeling and Statistical Computing December 2025\n\nProject Subtitle\nA Comprehensive Statistical Analysis of Voting Behavior Across Four Decades\n\n\nOverview\nVoter turnout in the United States varies dramatically from state to state and election to election. This research project investigates whether socioeconomic pressures—unemployment, housing affordability, crime rates, and cost of living—have become stronger predictors of voter participation than civic obligation alone.\nAnalyzing data from six strategically selected states (New York, California, Ohio, Michigan, Florida, and Utah) across 23 elections from 1980 to 2024, this study tests whether external conditions influence whether people vote or if turnout remains stable regardless of economic and social realities.\n\n\nKey Research Questions\n\nDo macroeconomic conditions (unemployment, household income, housing prices) predict voter turnout?\nIs there a significant relationship between violent crime rates and political participation?\nDoes a state’s political affiliation (Red, Blue, or Swing) influence turnout patterns?\nCan weather conditions on Election Day affect voter participation?\nWhat unemployment trends can we forecast for the 2026 midterm elections?\n\n\n\nMethodology & Statistical Techniques\n\nOne-Way ANOVA & Welch’s ANOVA: Compared mean voter turnout across categorical groupings of economic and crime factors\nChi-Square Tests of Independence: Examined associations between categorical variables and turnout classification\nPermutation Tests: Assessed linear relationships between continuous variables without distributional assumptions\nBootstrap Resampling: Evaluated pre-post comparisons of turnout across historical crime periods\nTime Series Analysis (ARIMA): Forecasted 2026 unemployment rates for Florida, California, and Michigan\nPost-Hoc Testing: Bonferroni and Games-Howell procedures for pairwise comparisons\n\n\n\nKey Findings\n\nPartisan Affiliation Matters: Swing states showed 5.47% higher turnout than Blue states in presidential elections (p = 0.0012)\nHousing Economics Influence Turnout: States with high housing price indices had ~5% higher presidential turnout than low HPI states (p = 0.0007)\nCrime Impacts Presidential Elections: Medium-crime elections saw 4.35 percentage points higher turnout than high-crime elections (p = 0.004)\nWeather Has No Effect: Neither precipitation nor temperature showed statistically significant associations with turnout\nEconomic Forecast: All three analyzed states predict rising unemployment heading into 2026 midterms\n\n\n\nData Sources\n\nVoter Turnout: University of Florida Election Lab\nEconomic Data: Federal Reserve Economic Data (FRED) - unemployment rates, median household income, housing price index\nCrime Statistics: FBI Crime Data Explorer - violent crime rates by state\nWeather Data: NOAA API - Election Day conditions from capital city weather stations\nPopulation Data: U.S. Census Bureau\n\n\n\nTechnologies & Tools Used\n\nR (Statistical Analysis & Modeling)\nPython (Data Processing & Cleaning)\nARIMA Time Series Modeling\nStatistical Testing Frameworks\nData Visualization (ggplot2, matplotlib)\nFederal Reserve Economic Data (FRED) API\nNOAA Weather API\n\n\n\nImpact & Implications\nThis analysis demonstrates that voter participation is responsive to real-world conditions people experience, not just political factors. The findings suggest campaigns can strategically identify issues that resonate with voters by understanding the socioeconomic conditions that drive turnout. The work provides evidence-based insights for:\n\nPolitical campaign strategy and messaging\nUnderstanding voter mobilization dynamics\nPredicting turnout based on economic indicators\nResource allocation in swing states with economic volatility\n\n\n\nTeam Members\nPavlos Baffes, Noelle Martell, Younghoon (Eric) Kim, Nkem Okweye, Nikhil Patla\nView Full Project →\n\n\n\n\n\n\nA Deep Dive into U.S. Airline Performance\nGeorgetown University\n\nOverview\nAn immersive exploration of aviation data, uncovering hidden patterns in flight operations, delays, and travel trends through statistical modeling and interactive visualizations. This project transforms thousands of flight records into actionable insights about air travel dynamics.\n\n\nKey Features\n\nComprehensive analysis of U.S. airline performance metrics\nInteractive visualizations revealing flight delay patterns\nStatistical modeling of travel trends and operational dynamics\nData-driven insights into aviation industry performance\n\n\n\nTechnologies Used\n\nSQL\nMySQLWorkbench\nR\nQuarto\nGitHub\nAWS\n\n\n\nSkills Demonstrated\n\nAdvanced data preprocessing and cleaning\nStatistical modeling and hypothesis testing\nInteractive data visualization\nInsight communication through visual storytelling\n\nView Project →\n\n\n\n\nMovie Review Web Application (Binge)\nUniversity of Ottawa - ADM 4379\n\nOverview\nA full-stack web application for browsing and reviewing movies, designed to handle a large database of movie records with optimized performance.\n\n\nKey Features\n\nResponsive user interface for seamless browsing\nSQL database managing 20,000+ movie records\nUser authentication and review submission\nOptimized query performance\n\n\n\nTechnologies Used\n\nFrontend: HTML, CSS, JavaScript\nBackend: PHP\nDatabase: SQL\n\n\n\nKey Achievements\n\nImproved feature response time by 30% through query optimization\nImplemented responsive design for mobile and desktop\nCreated intuitive user experience for movie discovery\n\nView Live Project →\n\n\n\nData Mining Project: Customer Sentiment Analysis\nUniversity of Ottawa - ADM 3308\n\nOverview\nAnalyzed customer reviews to identify sentiment patterns and travel preferences using unsupervised learning techniques.\n\n\nDataset\n\n5,456 Google reviews\nTravel and hospitality domain\nMulti-dimensional customer feedback\n\n\n\nMethodology\n\nApplied K-Means clustering algorithm\nIdentified distinct customer sentiment clusters\nAnalyzed cluster characteristics and patterns\nExtracted actionable insights for content personalization\n\n\n\nKey Findings\n\nDiscovered distinct customer preference segments\nIdentified key factors influencing customer satisfaction\nProvided data-driven recommendations for content strategy\n\n\n\nTechnologies Used\n\nPython\nK-Means Clustering\nNatural Language Processing (NLP)\nData Visualization\n\n\n\nImpact\nThe analysis provided valuable insights into customer preferences, enabling data-driven content personalization strategies and improved targeting of travel services.\n\n\n\nInteractive Dog Adoption Application\nUniversity of Ottawa - ADM 4311\n\nOverview\nA Python-based interactive application built in Jupyter Notebook to facilitate dog adoption and service selection.\n\n\nKey Features\n\nInteractive notebook-based user interface\nSearch and filtering functionality\nAuthentication system\nService options selection\n\n\n\nTechnical Implementation\n\nApplied core Python concepts: loops, functions, conditionals\nImplemented data structures for efficient data management\nBuilt authentication using dictionary-based text mapping\nCreated search algorithms for dog matching\n\n\n\nTechnologies Used\n\nPython\nJupyter Notebook\nData Structures (dictionaries, lists)\n\n\n\nLearning Outcomes\nThis project reinforced fundamental programming concepts and demonstrated the ability to create user-friendly interactive applications using Python.\nView Project Details & Code →"
+    "objectID": "projects/voter-turnout.html#data",
+    "href": "projects/voter-turnout.html#data",
+    "title": "What actually drives Americans to vote?",
+    "section": "Data",
+    "text": "Data\nTurnout from the University of Florida Election Lab, joined with FRED economic series (unemployment, median household income, housing price index), FBI violent-crime rates, NOAA Election Day weather and U.S. Census population, for New York, California, Ohio, Michigan, Florida and Utah."
   },
   {
-    "objectID": "projects.html#project-categories",
-    "href": "projects.html#project-categories",
-    "title": "Projects",
-    "section": "Project Categories",
-    "text": "Project Categories\n\nProfessional Work\nEnterprise-level automation and data analytics solutions deployed in government settings, focusing on operational efficiency and stakeholder value.\nWeb Development\nFull-stack applications combining frontend design, backend logic, and database management to create functional, user-friendly experiences.\nData Science & Analytics\nMachine learning, statistical analysis, and data mining projects demonstrating analytical thinking and technical expertise.\nPython Applications\nInteractive applications showcasing programming fundamentals and problem-solving capabilities.\n\n← Back to Home View Skills →"
+    "objectID": "projects/voter-turnout.html#method",
+    "href": "projects/voter-turnout.html#method",
+    "title": "What actually drives Americans to vote?",
+    "section": "Method",
+    "text": "Method\none-way ANOVAWelch’s ANOVAchi-squarepermutation testsbootstrapARIMABonferroniGames-Howell\nWe checked assumptions with Shapiro-Wilk and Levene’s tests before each comparison, and used post-hoc procedures across 12+ hypothesis tests. ARIMA models forecast 2026 unemployment for Florida, California and Michigan."
+  },
+  {
+    "objectID": "projects/voter-turnout.html#results",
+    "href": "projects/voter-turnout.html#results",
+    "title": "What actually drives Americans to vote?",
+    "section": "Results",
+    "text": "Results\n\n  +5.47pts turnout, swing vs. blue states (presidential)p = 0.0012\n  ~5pts higher presidential turnout in high-HPI statesp = 0.0007\n  +4.35pts, medium- vs. high-crime electionsp = 0.004\n\nWeather had no significant effect on turnout, and all three forecast states point to rising unemployment going into the 2026 midterms."
+  },
+  {
+    "objectID": "projects/voter-turnout.html#what-it-means",
+    "href": "projects/voter-turnout.html#what-it-means",
+    "title": "What actually drives Americans to vote?",
+    "section": "What it means",
+    "text": "What it means\nTurnout responds to the conditions voters live in, not only to partisanship. Campaigns can use local economic conditions to understand which issues will move people to vote.\n\n  Read the full report ↗\n  ← All projects"
   },
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Resume",
+    "title": "Résumé",
     "section": "",
-    "text": "NKEMDIBE OKWEYE\nLinkedIn | GitHub"
+    "text": "Download PDF ↓"
   },
   {
-    "objectID": "resume.html#contact-information",
-    "href": "resume.html#contact-information",
-    "title": "Resume",
-    "section": "",
-    "text": "NKEMDIBE OKWEYE\nLinkedIn | GitHub"
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Résumé",
+    "section": "Experience",
+    "text": "Experience\n\nWork-Study Data Scientist\nGeorgetown University School of Medicine · Washington, DC · July 2026 – Present\n\nModeled 6 years of residency readiness survey data as a star schema (fact and dimension tables across 17 competencies), powering a multi-page dashboard comparing Georgetown against national results\nBuilt a Python pipeline that ingests national and school-level survey data into one dataset, replacing manual Excel cleanup\nBuilt a Net Readiness Score to benchmark Georgetown against national results across 17 competencies, weighting by respondent count so small specialties don’t distort Georgetown vs. national comparisons\nAutomated a manual process for combining clinical exam score reports across 6 clerkships into one historical dataset going back to 2016, with built-in quality checks to keep records accurate\nCommunicated findings to non-technical stakeholders through dashboards, slide decks, and written summaries\n\n\n\nAnalytics & Data Intern\nAL-Monitor · Washington, DC · April 2026 – August 2026\n\nBuilt Python pipelines pulling subscription data (subscriber counts, MRR, churn) from the Chargebee API to automate the monthly KPI report, eliminating about 3 hours of manual downloading, reformatting, and charting per report\nAutomated the Waterfall report, an overview of subscription health across individual, group, and omnichannel plans\nIngested newsletter campaign performance data from the Campaign Monitor API into a clean dataset for marketing reporting\nPartnered with 3 senior editors to scope their reporting needs and built a Looker Studio report that brings article and campaign performance data into one place, supporting data-driven content decisions\nMaintained daily and monthly Looker Studio dashboards and delivered data pulls and ad hoc analysis on subscriber, newsletter, and article performance for editorial, marketing, and leadership teams\n\n\n\nData Analyst\nDepartment of National Defence · Ottawa, Ontario · September 2023 – August 2025\n\nWrote SQL to transform 500K+ records from SAP ERP, SQL warehouses, Lakehouse, and CRM sources for Power BI\nCreated and maintained Power BI dashboards and Excel-based reporting tools used by 200+ stakeholders\nBuilt PowerPoint briefings on KPIs and performance insights, presenting findings to all levels of the organization\nWorked with data engineers and SMEs to turn business requirements into pipeline specs and data models feeding Power BI\nCleaned and validated large operational datasets (duplicates, missing values, inconsistencies) and documented business rules\nBuilt an intake portal with Power Automate and Azure DevOps that reduced manual data entry by 80%"
   },
   {
     "objectID": "resume.html#education",
     "href": "resume.html#education",
-    "title": "Resume",
+    "title": "Résumé",
     "section": "Education",
-    "text": "Education\n\nMaster of Science in Data Science and Analytics\nGeorgetown University | Washington, DC | 2025 – 2027\nRelevant Coursework: Machine Learning, Statistical Methods, A/B Testing & Experimental Design, Probability & Statistics, Advanced Data Visualization, Database Systems, Python Programming\n\n\nHonours Bachelor of Commerce (Business Technology Management)\nUniversity of Ottawa | Ottawa, Ontario | 2020 – 2025"
+    "text": "Education\n\nMaster of Science in Data Science and Analytics\nGeorgetown University · Washington, DC · August 2025 – May 2027\nRelevant coursework: Database Systems, Machine Learning, Data Visualization, Probability & Statistics, NLP\n\n\nHonours Bachelor of Commerce, Business Technology Management\nUniversity of Ottawa · Ottawa, Ontario · September 2020 – December 2024"
   },
   {
     "objectID": "resume.html#skills",
     "href": "resume.html#skills",
-    "title": "Resume",
+    "title": "Résumé",
     "section": "Skills",
-    "text": "Skills\nProgramming & Data Analysis\nPython (Pandas, NumPy, Scikit-learn, PyTorch, NLTK, Matplotlib, Seaborn), SQL, R (tidyverse, ggplot2)\nMachine Learning\nSupervised Learning (Regression, Classification, Logistic Regression, Naive Bayes, KNN), Unsupervised Learning (K-Means, DBSCAN, PCA, t-SNE), Model Evaluation (ROC/AUC, Confusion Matrix, Feature Selection), NLP (Sentiment Analysis, TF-IDF, Topic Modeling)\nExperimentation & Statistics\nA/B Testing, Experimental Design, Statistical Analysis, Bayesian Inference, Hypothesis Testing, Dimensionality Reduction\nData Engineering & Tools\nETL Pipelines, Large-Scale Data Processing, APIs, Git/GitHub, Jupyter Notebooks, AWS, Power BI, Excel, Data Structures & Algorithms"
-  },
-  {
-    "objectID": "resume.html#professional-experience",
-    "href": "resume.html#professional-experience",
-    "title": "Resume",
-    "section": "Professional Experience",
-    "text": "Professional Experience\n\nData Analyst\nDepartment of National Defence | Ottawa, Ontario | September 2023 – August 2024\n\nCollaborated with data engineers and product stakeholders to optimize enterprise datasets for accuracy and scalability, supporting product decisions and departmental reporting for 200+ users\nDesigned and automated Power BI dashboards integrating data from SAP, Excel, Lakehouse, and SharePoint—reducing report generation time by 40% and improving stakeholder decision-making\nUsed SQL in Microsoft Fabric to extract, transform, and load data across Lakehouse environments for real-time reporting\nPartnered with internal clients to identify reporting pain points and translate user needs into intuitive data products, achieving 95% positive feedback on delivered prototypes\nBuilt low-code Power Apps solutions to streamline intake and tracking processes, cutting manual work by 25% and improving workflow visibility\n\n\n\nStudent Analyst\nGlobal Affairs Canada | Ottawa, Ontario | May 2023 – August 2023\n\nSupported internal performance reporting and outreach analytics for international initiatives, validating 3 key policy indicators for management reporting\nConducted competitive and policy gap analyses, aligning insights to organizational objectives and stakeholder needs\nCollaborated cross-functionally with policy and technical teams to define metrics and translate qualitative data into actionable analytics"
+    "text": "Skills\nData modeling & SQL: SQL data modeling (joins, aggregations, data validation), PostgreSQL, dimensional modeling (star schema, fact and dimension tables), data documentation\nBI & reporting: Looker Studio, Power BI (DAX, Power Query), Tableau, Google Analytics, Excel and Google Sheets (pivot tables, XLOOKUP), KPI reporting, dashboard design\nProgramming & pipelines: Python (pandas, NumPy, Jupyter), REST APIs (Chargebee, Campaign Monitor, Microsoft Graph), ETL pipelines, workflow automation, R, Git/GitHub\nMarketing & business data: Marketing analytics, subscription metrics (MRR, churn, subscriber growth), newsletter campaign performance, audience engagement\nMethods & practices: Data quality validation, root-cause analysis, requirements gathering, cross-functional collaboration"
   },
   {
     "objectID": "resume.html#projects",
     "href": "resume.html#projects",
-    "title": "Resume",
+    "title": "Résumé",
     "section": "Projects",
-    "text": "Projects\n\n\n\nSocioeconomic and Structural Determinants for Voter Turnout in U.S. Elections\nGeorgetown University - DSAN 5100\n\nConducted comprehensive statistical analysis of 23 elections (1980-2024) across 6 states, processing voter turnout data from 138 election observations to identify socioeconomic predictors of political participation\nApplied advanced statistical methodologies including one-way ANOVA, Welch’s ANOVA, chi-square tests, permutation tests, and bootstrap resampling to test relationships between voter turnout and macroeconomic indicators\nDeveloped ARIMA time series models forecasting 2026 unemployment rates for three representative states, achieving statistically significant predictions with 95% confidence intervals\nIntegrated data from 5 federal sources (FRED API, FBI Crime Data Explorer, NOAA API, U.S. Census Bureau, UFL Election Lab) using Python and R for comprehensive multi-dimensional analysis\nDiscovered statistically significant relationships: swing states showed 5.47% higher turnout than blue states (p=0.0012), high housing price index states demonstrated ~5% higher presidential turnout (p=0.0007), and medium-crime elections exhibited 4.35 percentage point higher turnout than high-crime elections (p=0.004)\nPerformed rigorous assumption testing (Shapiro-Wilk, Levene’s test) and post-hoc analysis (Bonferroni, Games-Howell procedures) to ensure statistical validity across 12+ hypothesis tests\n\n\n\n\n\n\nMenendez Brothers Media Narrative Analysis\nGeorgetown University - DSAN 5000\n\nEngineered large-scale data pipeline processing 2,840+ documents from multiple APIs (Guardian API, YouTube Data API v3) and historical archives using robust ETL workflows\nDeveloped and evaluated machine learning models (Multinomial Naive Bayes, Logistic Regression) achieving 96.8% test accuracy through hyperparameter tuning and feature selection\nDesigned experiments using unsupervised learning (K-Means, PCA, t-SNE) to reduce 2,000+ TF-IDF features into three interpretable narrative clusters\nApplied statistical analysis and sentiment modeling to quantify temporal trends, identifying 0.4-point sentiment divergence between traditional journalism and social media\nPresented findings through interactive visualizations including ROC curves, confusion matrices, and t-SNE embeddings\n\n\n\n\n\n\nU.S. Airline Performance Analysis\nGeorgetown University - DSAN 6300\n\nDesigned and implemented dimensional data model (fact/dimension tables) for 600,000+ flight records from U.S. Department of Transportation, analyzing operational patterns across airlines and airports using PostgreSQL\nDeveloped complex SQL queries to identify performance anomalies including maximum delays (2,620 minutes), cancellation patterns (14,488 flights), and busiest operational periods (106,575 daily flights)\nConducted statistical analysis and created data visualizations in R (tidyverse, ggplot2, kableExtra) to uncover temporal patterns in flight operations, revealing clear weekday/weekend patterns driven by business travel\n\nView Project →\n\n\n\nRequest Automation Portal\nDepartment of National Defence\nDesigned an automated Azure DevOps workflow integrated with Microsoft Forms and Teams to track 100+ monthly requests; reduced manual entry by 80% and task delays by 50%.\n\n\nMovie Review Web Application (Binge)\nUniversity of Ottawa - ADM 4379\n\nBuilt responsive SQL-backed movie review application managing 20,000+ records with optimized database queries\nImproved feature response time by 30% through query optimization and data structure improvements\nDesigned user-centric interface using HTML, CSS, and PHP to enhance user experience and engagement\n\nView Project →\n\n\nInteractive Dog Adoption Application\nUniversity of Ottawa - ADM 4311\n\nBuilt a Jupyter Notebook–based Python application for dog adoption and service options, executed through interactive notebook cells\nApplied core Python concepts (loops, functions, conditionals, and data structures) to build search and selection features\nDeveloped a simple authentication system using dictionary-based text mapping to validate usernames and passwords\n\n\n\nData Mining Project\nUniversity of Ottawa - ADM 3308\nIdentified key customer sentiment clusters from 5,456 Google reviews using K-Means analysis to uncover travel preference insights and inform content personalization strategies."
+    "text": "Projects\n\nU.S. Airline Performance Analysis\nGeorgetown University · DSAN 6300 (Database Systems)\n\nDesigned a dimensional model (fact and dimension tables) in PostgreSQL and used SQL to analyze 600,000+ flight records\nDocumented data sources, query logic, and methodology, and built an interactive dashboard for a non-technical audience\n\n\n\nMenendez Brothers Media Narrative Analysis\nGeorgetown University · DSAN 5000\n\nBuilt ETL pipelines integrating Guardian, YouTube Data, Google Trends APIs and OCR text, processing 8,300+ raw files\nDesigned data schemas and model-ready tables for repeatable analysis of sentiment and audience behavior trends"
   },
   {
-    "objectID": "resume.html#technical-skills",
-    "href": "resume.html#technical-skills",
-    "title": "Resume",
-    "section": "Technical Skills",
-    "text": "Technical Skills\nProgramming & Development\nPython (Pandas, NumPy, Scikit-learn, PyTorch, NLTK), R (tidyverse, ggplot), SQL, HTML, CSS, JavaScript, Git/GitHub, OOP\nCloud & Infrastructure\nAWS, Azure DevOps, Microsoft Fabric, CLI\nBusiness Intelligence & Automation\nPower BI, Power Apps, Power Automate, Dataflow Gen2, Excel, SAP\nAnalytics & Data Science\nETL, Statistical Analysis, Data Mining, Data Engineering, Data Visualization, A/B Testing, Bayesian Inference, Supervised & Unsupervised Learning (regression, classification, t-SNE, PCA, DBSCAN, K-Means), Experimental Design, NLP, Big Data\nMarketing & Digital\nA/B Testing, Digital Marketing, Social Media Analytics, SEO/SEM, Web Design\n← Back to Home View Skills →"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nkem Okweye",
+    "objectID": "projects/request-portal.html",
+    "href": "projects/request-portal.html",
+    "title": "Request intake portal",
     "section": "",
-    "text": "Welcome to my portfolio. I’m a data professional passionate about transforming complex data into actionable insights and building innovative solutions that drive business value.\nView Projects Resume"
+    "text": "WhereDepartment of National Defence\n  RoleData Analyst\n  Volume100+ requests a month\n  ToolsForms, Power Automate, Azure DevOps, Teams"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Nkem Okweye",
-    "section": "About Me",
-    "text": "About Me\n\n\n\n\n\nI’m currently pursuing a Master of Science in Data Science and Analytics at Georgetown University, building on my Honours Bachelor of Commerce in Business Technology Management from the University of Ottawa.\nWith professional experience as a Data Analyst at the Department of National Defence and as a Student Analyst at Global Affairs Canada, I’ve developed expertise in building scalable data solutions, automating reporting workflows, and translating complex business requirements into intuitive data products.\nI specialize in leveraging modern data tools and technologies to solve real-world problems, from designing Power BI dashboards that reduce reporting time by 40% to building automated workflows that cut manual work by 80%."
+    "objectID": "projects/request-portal.html#the-problem",
+    "href": "projects/request-portal.html#the-problem",
+    "title": "Request intake portal",
+    "section": "The problem",
+    "text": "The problem\nRequests arrived through email and chat in different formats, so each one had to be retyped into a tracker by hand. Status was hard to see and tasks slipped."
   },
   {
-    "objectID": "index.html#featured-projects",
-    "href": "index.html#featured-projects",
-    "title": "Nkem Okweye",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\n\n\n\nSocioeconomic and Structural Determinants for Voter Turnout\nGeorgetown University - DSAN 5100\nA comprehensive statistical analysis investigating whether socioeconomic pressures—unemployment, housing affordability, crime rates, and cost of living—predict voter participation more than civic duty. Analyzing 23 elections (1980-2024) across six states using advanced statistical methods including ANOVA, time series forecasting, and bootstrap resampling to uncover what really drives Americans to vote.\nTechnologies: R, Python, Quarto\nView Project →\n\n\n\n\n\nThe Menendez Brothers: From Courtrooms to Comments Sections\nGeorgetown University\nA data science exploration tracing how public discourse around the Menendez brothers transformed across 35 years—from their 1989 crime through their sensationalized trials to the Netflix era. This project analyzes media narratives across multiple platforms, revealing fundamental shifts in how American society understands family violence, male victimization, and criminal justice reform.\nTechnologies: Python, NLP, Text Analysis, Data Visualization, Social Media Analytics\nView Project →\n\n\n\n\n\nA Deep Dive into U.S. Airline Performance\nGeorgetown University\nAn immersive exploration of aviation data, uncovering hidden patterns in flight operations, delays, and travel trends through statistical modeling and interactive visualizations. This project transforms thousands of flight records into actionable insights about air travel dynamics.\nTechnologies: SQL, MySQLWorkbench, R, Quarto, GitHub, AWS\nView Project →\n\n\n\nRequest Automation Portal\nDepartment of National Defence\nDesigned an automated Azure DevOps workflow integrated with Microsoft Forms and Teams to track 100+ monthly requests, reducing manual entry by 80% and task delays by 50%.\nTechnologies: Azure DevOps, Microsoft Forms, Power Automate, Teams\n\n\nData Mining Project\nUniversity of Ottawa\nIdentified key customer sentiment clusters from 5,456 Google reviews using K-Means analysis to uncover travel preference insights and inform content personalization strategies.\nTechnologies: Orange Data Mining\n\n\nMovie Review Application (Binge)\nUniversity of Ottawa\nBuilt a responsive SQL-backed movie review application for 20,000+ records using HTML, CSS, and PHP, optimizing queries and user experience to improve feature response by 30%.\nTechnologies: SQL, HTML, CSS, PHP\nView Project →\n\n\nInteractive Dog Adoption Application\nUniversity of Ottawa\nBuilt a Jupyter Notebook-based Python application for dog adoption and service options with authentication and search features using core Python concepts.\nTechnologies: Python, Jupyter, Data Structures\nView Project →"
+    "objectID": "projects/request-portal.html#what-i-built",
+    "href": "projects/request-portal.html#what-i-built",
+    "title": "Request intake portal",
+    "section": "What I built",
+    "text": "What I built\nA structured intake form in Microsoft Forms feeds Power Automate flows that create and route Azure DevOps work items and post updates to Teams. Every request gets the same fields, an owner and a visible status."
   },
   {
-    "objectID": "index.html#skills-snapshot",
-    "href": "index.html#skills-snapshot",
-    "title": "Nkem Okweye",
-    "section": "Skills Snapshot",
-    "text": "Skills Snapshot\n\n\nProgramming & Tools\nPython, R, SQL, JavaScript, HTML/CSS, Git, AWS, Azure DevOps\n\n\nAnalytics & Data Science\nETL, Statistical Analysis, Machine Learning, NLP, Data Visualization, A/B Testing\n\n\nBusiness Intelligence\nPower BI, Power Apps, Power Automate, Excel, SAP, Dataflow Gen2\n\n\nView Full Skills →"
+    "objectID": "projects/request-portal.html#results",
+    "href": "projects/request-portal.html#results",
+    "title": "Request intake portal",
+    "section": "Results",
+    "text": "Results\n\n  80%less manual data entryintake automation\n  50%fewer task delaysrouting + visibility\n  100+requests tracked each monthAzure DevOps\n\n← All projects"
   },
   {
-    "objectID": "index.html#lets-connect",
-    "href": "index.html#lets-connect",
-    "title": "Nkem Okweye",
-    "section": "Let’s Connect",
-    "text": "Let’s Connect\nI’m always interested in discussing data science, analytics, and technology. Feel free to reach out!\nView Full Resume →"
-  },
-  {
-    "objectID": "skills.html",
-    "href": "skills.html",
-    "title": "Skills & Expertise",
+    "objectID": "projects/menendez-narratives.html",
+    "href": "projects/menendez-narratives.html",
+    "title": "The Menendez Brothers, from courtroom to comments section",
     "section": "",
-    "text": "← Back to Home"
+    "text": "TypeSemester project\n  CourseDSAN 5000, Data Science & Analytics\n  Data2,840+ documents · 1989–2024\n  ToolsPython, scikit-learn, NLTK"
   },
   {
-    "objectID": "skills.html#core-technical-skills",
-    "href": "skills.html#core-technical-skills",
-    "title": "Skills & Expertise",
-    "section": " Core Technical Skills",
-    "text": "Core Technical Skills\n\n\n Python\nMy go-to for data analysis, machine learning, and automation. From building NLP pipelines to clustering 5,000+ reviews, Python is my data science workhorse.\nKey Libraries: Pandas • NumPy • Scikit-learn • PyTorch • NLTK\n\n\n R\nStatistical analysis and data visualization specialist. Used for advanced analytics and creating publication-ready visualizations.\nKey Packages: tidyverse • ggplot2 • statistical modeling\n\n\n SQL\nDatabase design and query optimization for handling 20,000+ record datasets. Experience with MySQL and cloud-based data warehousing.\nApplications: Query optimization • Database design • ETL processes\n\n\n Web Development\nFull-stack capabilities for building responsive applications and data-driven web tools.\nTechnologies: HTML • CSS • JavaScript • PHP • Git/GitHub"
+    "objectID": "projects/menendez-narratives.html#the-question",
+    "href": "projects/menendez-narratives.html#the-question",
+    "title": "The Menendez Brothers, from courtroom to comments section",
+    "section": "The question",
+    "text": "The question\nIn 1989 Lyle and Erik Menendez killed their parents in Beverly Hills. Coverage moved from tabloid sensation to a Netflix-era reappraisal of abuse and justice. I measured how that narrative changed across three decades and across platforms."
   },
   {
-    "objectID": "skills.html#microsoft-power-platform",
-    "href": "skills.html#microsoft-power-platform",
-    "title": "Skills & Expertise",
-    "section": " Microsoft Power Platform",
-    "text": "Microsoft Power Platform\n\n\n Power BI\nDesigned dashboards that reduced reporting time by 40% and served 200+ users across departments.\n\nAdvanced DAX formulas\nData modeling & relationships\nInteractive dashboard design\nPerformance optimization\n\n\n\n Power Automate\nBuilt automation workflows that cut manual work by 80% and integrated with Azure DevOps for seamless request tracking.\n\nWorkflow automation\nTeams integration\nForms-to-database pipelines\n\n\n\n Power Apps\nLow-code application development for rapid prototyping and business solutions.\n\nCanvas apps\nModel-driven apps\nCustom connectors\n\n\n\n Microsoft Fabric\nWorking with Dataflow Gen2, Lakehouse architecture, and modern data engineering practices.\n\nDataflow Gen2\nLakehouse design\nETL pipelines"
+    "objectID": "projects/menendez-narratives.html#data",
+    "href": "projects/menendez-narratives.html#data",
+    "title": "The Menendez Brothers, from courtroom to comments section",
+    "section": "Data",
+    "text": "Data\nA pipeline pulling 2,840+ documents from the Guardian API, the YouTube Data API v3 and historical archives, cleaned through a repeatable ETL workflow."
   },
   {
-    "objectID": "skills.html#cloud-devops",
-    "href": "skills.html#cloud-devops",
-    "title": "Skills & Expertise",
-    "section": " Cloud & DevOps",
-    "text": "Cloud & DevOps\n\n\n AWS\nCloud infrastructure, deployment, and data storage solutions.\n\n\n Azure\nAzure DevOps for project management and CI/CD workflows.\n\n\n Version Control\nGit/GitHub for collaborative development and code management."
+    "objectID": "projects/menendez-narratives.html#method",
+    "href": "projects/menendez-narratives.html#method",
+    "title": "The Menendez Brothers, from courtroom to comments section",
+    "section": "Method",
+    "text": "Method\nTF-IDFMultinomial Naive Bayeslogistic regressionK-MeansPCAt-SNEsentiment analysis\nSupervised models classified documents by source and era, tuned with hyperparameter search and feature selection. Unsupervised methods reduced 2,000+ TF-IDF features into three interpretable narrative clusters."
   },
   {
-    "objectID": "skills.html#data-science-machine-learning",
-    "href": "skills.html#data-science-machine-learning",
-    "title": "Skills & Expertise",
-    "section": " Data Science & Machine Learning",
-    "text": "Data Science & Machine Learning\n\n\n Data Engineering\n\nETL pipeline design\nData warehousing\nDatabase architecture\nData mining at scale\n\n\n\n Statistical Analysis\n\nBayesian inference\nA/B testing & experimentation\nExperimental design\nHypothesis testing\n\n\n\n Machine Learning\nSupervised Learning - Regression & classification - Model evaluation & tuning\nUnsupervised Learning - K-Means & DBSCAN clustering - PCA & t-SNE - Pattern discovery\n\n\n Specialized Techniques\n\nNatural Language Processing\nBig data processing\nAdvanced data visualization\nSocial media analytics"
+    "objectID": "projects/menendez-narratives.html#results",
+    "href": "projects/menendez-narratives.html#results",
+    "title": "The Menendez Brothers, from courtroom to comments section",
+    "section": "Results",
+    "text": "Results\n\n  96.8%test accuracy after tuningMultinomial Naive Bayes\n  3distinct narrative clusters from 2,000+ featuresK-Means + t-SNE\n  0.4point sentiment gap, journalism vs. social mediasentiment model"
   },
   {
-    "objectID": "skills.html#soft-skills-that-drive-impact",
-    "href": "skills.html#soft-skills-that-drive-impact",
-    "title": "Skills & Expertise",
-    "section": " Soft Skills That Drive Impact",
-    "text": "Soft Skills That Drive Impact\n\n\n Stakeholder Management\nSuccessfully collaborated with 200+ users across departments, translating technical solutions into business value.\n\n\n Problem Solving\nIdentifying pain points and designing data-driven solutions—from automation portals to predictive models.\n\n\n Communication\nPresenting complex technical concepts to non-technical audiences through clear visualizations and storytelling.\n\n\n Cross-functional Collaboration\nWorking seamlessly with data engineers, policy teams, and business stakeholders to deliver integrated solutions."
+    "objectID": "projects/menendez-narratives.html#what-it-means",
+    "href": "projects/menendez-narratives.html#what-it-means",
+    "title": "The Menendez Brothers, from courtroom to comments section",
+    "section": "What it means",
+    "text": "What it means\nTraditional journalism and social media tell measurably different stories about the same case. The clusters trace the shift from tabloid framing toward conversations about abuse, male victimization and criminal-justice reform.\n\n  Read the full project ↗\n  ← All projects"
   },
   {
-    "objectID": "skills.html#want-to-see-these-skills-in-action",
-    "href": "skills.html#want-to-see-these-skills-in-action",
-    "title": "Skills & Expertise",
-    "section": "Want to see these skills in action?",
-    "text": "Want to see these skills in action?\nExplore My Projects View Resume"
+    "objectID": "projects/vanishing-entry-point.html",
+    "href": "projects/vanishing-entry-point.html",
+    "title": "The Vanishing Entry Point",
+    "section": "",
+    "text": "TeamNkem Okweye & Noelle Martell\n  CourseDSAN 5200, Georgetown\n  Data5 public sources, 1970–2025\n  ToolsD3.js, Chart.js, HTML/CSS/JS"
+  },
+  {
+    "objectID": "projects/vanishing-entry-point.html#the-question",
+    "href": "projects/vanishing-entry-point.html#the-question",
+    "title": "The Vanishing Entry Point",
+    "section": "The question",
+    "text": "The question\nMore people hold bachelor’s degrees than ever, yet new graduates say the first job is harder to land. We set out to check whether the data backs that up, using underemployment as the main lens: graduates working jobs that don’t typically need a degree."
+  },
+  {
+    "objectID": "projects/vanishing-entry-point.html#data",
+    "href": "projects/vanishing-entry-point.html#data",
+    "title": "The Vanishing Entry Point",
+    "section": "Data",
+    "text": "Data\n\nBLS JOLTS: job openings, hires and layoffs, monthly, 2015–2025\nNY Fed College Labor Market: unemployment and underemployment for recent grads aged 22–27, 1990–2025\nNCES Digest of Education Statistics: bachelor’s degrees conferred, 1970–2021\nGoogle Trends: six job-search terms such as “entry level jobs” and “years of experience required”, 2015–2025\nGeorgetown CEW + NY Fed Major Explorer: 74 majors matched after harmonizing names"
+  },
+  {
+    "objectID": "projects/vanishing-entry-point.html#method",
+    "href": "projects/vanishing-entry-point.html#method",
+    "title": "The Vanishing Entry Point",
+    "section": "Method",
+    "text": "Method\nD3.js bubble chartChart.js line & gap chartsannotation layerssource harmonizationscroll storytelling\nWe built the story as a single-page site with no frameworks: seven Chart.js charts, an interactive unemployment vs. underemployment toggle, and a D3 bubble chart where each major’s size is its early-career wage. Google Trends is used only as corroborating evidence, and we left sparse pre-2005 NCES years uninterpolated."
+  },
+  {
+    "objectID": "projects/vanishing-entry-point.html#results",
+    "href": "projects/vanishing-entry-point.html#results",
+    "title": "The Vanishing Entry Point",
+    "section": "Results",
+    "text": "Results\n\n  46%fewer actual hires than job postings impliedBLS JOLTS\n  ~42%of recent graduates are underemployedNY Fed\n  1.07 → 1.75openings per hire, 2015 to the 2022 peakBLS JOLTS\n  12.3Mjob openings in March 2022, the highest on recordBLS JOLTS\n\nBachelor’s completions more than doubled from 839K in 1970 to 2.07M in 2021. Underemployment for liberal arts and general business majors runs two to three times higher than for engineering and nursing."
+  },
+  {
+    "objectID": "projects/vanishing-entry-point.html#what-it-means",
+    "href": "projects/vanishing-entry-point.html#what-it-means",
+    "title": "The Vanishing Entry Point",
+    "section": "What it means",
+    "text": "What it means\nPostings overstated real demand. Openings surged after 2021 while hiring did not keep pace, so new graduates competed for fewer real jobs than the headlines suggested.\n\n  Explore the live site ↗\n  ← All projects"
+  },
+  {
+    "objectID": "projects/binge-movie-app.html",
+    "href": "projects/binge-movie-app.html",
+    "title": "Binge: a movie review web app",
+    "section": "",
+    "text": "CourseADM 4379, University of Ottawa\n  Data20,000+ movie records\n  StackHTML, CSS, JavaScript, PHP, SQL\n  Result30% faster responses"
+  },
+  {
+    "objectID": "projects/binge-movie-app.html#what-it-is",
+    "href": "projects/binge-movie-app.html#what-it-is",
+    "title": "Binge: a movie review web app",
+    "section": "What it is",
+    "text": "What it is\nA full-stack site for browsing and reviewing movies, with user accounts, review submission and search over a large movie database."
+  },
+  {
+    "objectID": "projects/binge-movie-app.html#how-it-works",
+    "href": "projects/binge-movie-app.html#how-it-works",
+    "title": "Binge: a movie review web app",
+    "section": "How it works",
+    "text": "How it works\n\nSQL database of 20,000+ movie records, with indexed and rewritten queries\nPHP back end for authentication and reviews\nResponsive front end for desktop and mobile"
+  },
+  {
+    "objectID": "projects/binge-movie-app.html#results",
+    "href": "projects/binge-movie-app.html#results",
+    "title": "Binge: a movie review web app",
+    "section": "Results",
+    "text": "Results\nQuery optimization and better data structures improved feature response time by 30%.\n\n  Open the live site ↗\n  ← All projects"
   }
 ]

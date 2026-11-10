@@ -1,0 +1,41 @@
+---
+title: "Binge: a movie review web app"
+subtitle: "University of Ottawa · ADM 4379"
+description: "A responsive SQL-backed movie review app over 20,000+ records, built with HTML, CSS and PHP."
+date: 2024-04-01
+categories: [Web development, SQL]
+course: "uOttawa · ADM 4379"
+cat_label: "Web · SQL"
+stat: "30%"
+stat_text: "faster feature response after query tuning"
+---
+
+```{=html}
+<div class="cs-facts">
+  <div><span>Course</span>ADM 4379, University of Ottawa</div>
+  <div><span>Data</span>20,000+ movie records</div>
+  <div><span>Stack</span>HTML, CSS, JavaScript, PHP, SQL</div>
+  <div><span>Result</span>30% faster responses</div>
+</div>
+```
+
+## What it is
+
+A full-stack site for browsing and reviewing movies, with user accounts, review submission and search over a large movie database.
+
+## How it works
+
+- SQL database of 20,000+ movie records, with indexed and rewritten queries
+- PHP back end for authentication and reviews
+- Responsive front end for desktop and mobile
+
+## Results
+
+Query optimization and better data structures improved feature response time by **30%**.
+
+```{=html}
+<div class="btns" style="margin-top:2rem">
+  <a class="btn-pill p" href="https://nko123.github.io/index.html">Open the live site ↗</a>
+  <a class="btn-pill s" href="../work.html">← All projects</a>
+</div>
+```

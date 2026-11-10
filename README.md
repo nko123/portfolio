@@ -1,96 +1,61 @@
-# Portfolio Website
+# Nkem Okweye · Portfolio
 
-A professional portfolio website built with Quarto, showcasing projects, skills, and professional experience.
+Personal portfolio site for Nkem Okweye, data scientist at Georgetown University School of Medicine and MS Data Science & Analytics candidate. Built with [Quarto](https://quarto.org) and published with GitHub Pages from the `docs/` folder.
+
+**Live site:** https://nko123.github.io/portfolio
 
 ## Structure
 
-- **index.qmd** - Landing page with hero section, about snippet, featured projects, and skills overview
-- **about.qmd** - Detailed personal background and professional journey
-- **skills.qmd** - Comprehensive technical skills and expertise
-- **resume.qmd** - Full professional experience and education
-- **projects.qmd** - Detailed project descriptions and achievements
-- **styles.css** - Custom styling for a modern, professional look
+```
+index.qmd            Home: intro, impact numbers, experience timeline, featured projects, contact
+work.qmd             All projects (Quarto listing of projects/, filterable by category)
+projects/*.qmd       One case study per project
+about.qmd            Story and skills
+resume.qmd           Full résumé
+404.qmd              Not-found page
+assets/
+  img/               Project covers and portrait
+  logos/             Employer and school logos
+  theme-light.scss   Light palette (Bootstrap variables + CSS tokens)
+  theme-dark.scss    Dark palette, used by the navbar toggle
+  project-card.ejs   Card template for the Work listing
+  favicon.svg
+styles.css           Layout and components, colored only through the theme tokens
+docs/                Rendered site (generated, do not edit by hand)
+```
 
-## Prerequisites
+## Add a project
 
-You need to have Quarto installed. If you don't have it:
+1. Create `projects/<slug>.qmd`.
+2. Fill in the front matter. These fields drive the card on the Work page:
+
+```yaml
+---
+title: "Project title"
+subtitle: "One-line summary"
+description: "Two sentences for the card."
+date: 2026-05-01            # used for sorting
+image: ../assets/img/<cover>.jpg
+categories: [Statistics, R]
+course: "DSAN 5100 · Georgetown"
+cat_label: "Statistics · R" # label shown on the card image
+stat: "+5.47 pts"           # headline result
+stat_text: "swing vs. blue states"
+---
+```
+
+3. To feature it on the homepage, add a card to the `#work` section of `index.qmd`.
+
+## Preview and publish
 
 ```bash
-# On macOS with Homebrew
-brew install quarto
-
-# Or download from https://quarto.org/docs/get-started/
+quarto preview      # live preview
+quarto render       # build into docs/
+git add -A && git commit -m "Update site" && git push
 ```
 
-## How to Preview
+GitHub Pages serves the `main` branch, `/docs` folder.
 
-1. Open terminal in this directory
-2. Run the preview command:
+## Design
 
-```bash
-quarto preview
-```
-
-This will:
-- Build the website
-- Open it in your default browser
-- Auto-reload when you make changes
-
-## How to Build
-
-To build the static website files:
-
-```bash
-quarto render
-```
-
-The built website will be in the `docs/` folder, ready to deploy to:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting service
-
-## Deploying to GitHub Pages
-
-1. Push this repository to GitHub
-2. Go to Settings > Pages
-3. Set Source to "Deploy from a branch"
-4. Select branch: main, folder: /docs
-5. Save and wait for deployment
-
-Your site will be available at: `https://[username].github.io/[repo-name]/`
-
-## Customization
-
-### Colors
-Edit color scheme in `styles.css`:
-```css
-:root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-}
-```
-
-### Content
-- Update each `.qmd` file with your content
-- Add more projects to `projects.qmd`
-- Update skills in `skills.qmd`
-- Modify resume in `resume.qmd`
-
-### Navigation
-Edit `_quarto.yml` to add/remove pages from navbar
-
-## Features
-
-- Responsive design (mobile-friendly)
-- Modern gradient hero section
-- Project cards with hover effects
-- Clean typography
-- Professional color scheme
-- Easy navigation
-- Fast loading
-
-## Support
-
-For Quarto documentation: https://quarto.org/docs/websites/
+"Studio Portrait": deep teal taken from the portrait backdrop, muted gold for numbers, Instrument Serif headlines with Figtree body text. Change colors in `assets/theme-light.scss` and `assets/theme-dark.scss`; every component reads from those tokens.

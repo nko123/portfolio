@@ -1,7 +1,13 @@
 ---
-title: "Interactive Dog Adoption Application"
-subtitle: "University of Ottawa - ADM 4311"
-author: "Nkem Okweye"
+title: "Woof Woof: a dog adoption app"
+subtitle: "University of Ottawa · ADM 4311"
+description: "A Jupyter-based Python app with login, service search and an adoption workflow, built from core data structures."
+date: 2023-04-01
+categories: [Python]
+course: "uOttawa · ADM 4311"
+cat_label: "Python"
+stat: "Python"
+stat_text: "lists, dictionaries and control flow"
 format:
   html:
     code-fold: false
@@ -281,4 +287,4 @@ if avail_dog_database != [] and options_list[new_num_stuff_selec] != "adopt a do
 - Input validation and error handling
 - Dynamic data updates
 
-[← Back to Projects](projects.qmd){.btn .btn-secondary}
+[← All projects](../work.qmd){.btn-pill .s}

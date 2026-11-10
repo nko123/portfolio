@@ -1,0 +1,15 @@
+---
+title: "Work"
+subtitle: "Projects from Georgetown, the University of Ottawa and the Department of National Defence."
+aliases:
+  - projects.html
+listing:
+  contents: projects
+  sort: "date desc"
+  type: grid
+  template: assets/project-card.ejs
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [title, description, image, categories, course, cat_label, stat, stat_text]
+---

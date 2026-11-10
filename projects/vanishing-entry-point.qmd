@@ -1,0 +1,66 @@
+---
+title: "The Vanishing Entry Point"
+subtitle: "The data behind a job market that got harder for new graduates."
+description: "Why the job market got harder for new grads. Five public datasets in an interactive story with Chart.js and a D3 explorer of 74 majors."
+date: 2026-05-01
+image: ../assets/img/vanishing-entry-point.jpg
+categories: [Data viz, D3, Labor economics]
+course: "DSAN 5200 · Georgetown"
+cat_label: "Data viz · D3"
+stat: "46%"
+stat_text: "fewer hires than postings implied"
+---
+
+```{=html}
+<div class="cs-facts">
+  <div><span>Team</span>Nkem Okweye &amp; Noelle Martell</div>
+  <div><span>Course</span>DSAN 5200, Georgetown</div>
+  <div><span>Data</span>5 public sources, 1970–2025</div>
+  <div><span>Tools</span>D3.js, Chart.js, HTML/CSS/JS</div>
+</div>
+<img class="cs-cover" src="../assets/img/vanishing-entry-point.jpg" alt="Illustration of a graduate in cap and gown" style="object-position:50% 25%">
+```
+
+## The question
+
+More people hold bachelor's degrees than ever, yet new graduates say the first job is harder to land. We set out to check whether the data backs that up, using underemployment as the main lens: graduates working jobs that don't typically need a degree.
+
+## Data
+
+- **BLS JOLTS:** job openings, hires and layoffs, monthly, 2015–2025
+- **NY Fed College Labor Market:** unemployment and underemployment for recent grads aged 22–27, 1990–2025
+- **NCES Digest of Education Statistics:** bachelor's degrees conferred, 1970–2021
+- **Google Trends:** six job-search terms such as "entry level jobs" and "years of experience required", 2015–2025
+- **Georgetown CEW + NY Fed Major Explorer:** 74 majors matched after harmonizing names
+
+## Method
+
+```{=html}
+<div class="methods"><span>D3.js bubble chart</span><span>Chart.js line &amp; gap charts</span><span>annotation layers</span><span>source harmonization</span><span>scroll storytelling</span></div>
+```
+
+We built the story as a single-page site with no frameworks: seven Chart.js charts, an interactive unemployment vs. underemployment toggle, and a D3 bubble chart where each major's size is its early-career wage. Google Trends is used only as corroborating evidence, and we left sparse pre-2005 NCES years uninterpolated.
+
+## Results
+
+```{=html}
+<div class="results">
+  <div class="res"><b>46%</b><span>fewer actual hires than job postings implied</span><i>BLS JOLTS</i></div>
+  <div class="res"><b>~42%</b><span>of recent graduates are underemployed</span><i>NY Fed</i></div>
+  <div class="res"><b>1.07 → 1.75</b><span>openings per hire, 2015 to the 2022 peak</span><i>BLS JOLTS</i></div>
+  <div class="res"><b>12.3M</b><span>job openings in March 2022, the highest on record</span><i>BLS JOLTS</i></div>
+</div>
+```
+
+Bachelor's completions more than doubled from 839K in 1970 to 2.07M in 2021. Underemployment for liberal arts and general business majors runs two to three times higher than for engineering and nursing.
+
+## What it means
+
+Postings overstated real demand. Openings surged after 2021 while hiring did not keep pace, so new graduates competed for fewer real jobs than the headlines suggested.
+
+```{=html}
+<div class="btns" style="margin-top:2rem">
+  <a class="btn-pill p" href="https://nmartell.georgetown.domains/DSAN5200_project/">Explore the live site ↗</a>
+  <a class="btn-pill s" href="../work.html">← All projects</a>
+</div>
+```

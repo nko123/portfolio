@@ -1,0 +1,36 @@
+---
+title: "Clustering 5,456 travel reviews"
+subtitle: "University of Ottawa · ADM 3308"
+description: "K-Means on 5,456 Google reviews to find customer sentiment segments for content personalization."
+date: 2023-12-01
+categories: [Machine learning, Clustering]
+course: "uOttawa · ADM 3308"
+cat_label: "Data mining"
+stat: "5,456"
+stat_text: "Google reviews clustered"
+---
+
+```{=html}
+<div class="cs-facts">
+  <div><span>Course</span>ADM 3308, University of Ottawa</div>
+  <div><span>Data</span>5,456 Google reviews</div>
+  <div><span>Method</span>K-Means clustering</div>
+  <div><span>Tool</span>Orange Data Mining</div>
+</div>
+```
+
+## The question
+
+What do travellers actually care about, and can reviews be grouped into segments a travel company could personalize content for?
+
+## Method
+
+I cleaned and vectorized the reviews, then used K-Means to group them into sentiment clusters and profiled each cluster's ratings and themes.
+
+## Results
+
+The clusters separated distinct preference segments and the factors driving satisfaction in each, which led to recommendations for targeting and content strategy.
+
+```{=html}
+<div class="btns" style="margin-top:2rem"><a class="btn-pill s" href="../work.html">← All projects</a></div>
+```
